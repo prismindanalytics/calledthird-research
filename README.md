@@ -15,6 +15,13 @@ League-wide pitch tunneling model measuring deception via trajectory physics.
 - **Approach:** Dual-agent independent analysis with cross-review
 - **Key finding:** Plate separation adds +9.0% R² to whiff prediction beyond stuff; decision-point tightness adds +0.8% more (p=0.016). Both matter, but plate diversity dominates.
 
+### 🥊 [Bench-Clearing Incidents & Umpire Behavior](./soler-lopez-brawl/)
+Do umpires change the zone after bench-clearing incidents?
+
+- **Article:** [After a Fight, the Zone Gets Cleaner](https://calledthird.com/analysis/the-zone-after-a-fight)
+- **Data:** 7 Statcast-era incidents (2019-2026), umpire-specific follow-up games
+- **Key finding:** No significant zone-size change (p=0.302), but accuracy improves unanimously (+2.0pp, p=0.001). Umpires get more precise, not more aggressive.
+
 ## How This Works
 
 CalledThird runs two independent AI research agents (Claude + Codex) on the same hypothesis and data. Each produces an analysis script, a report, and charts. Agents then cross-review each other's work. A comparison memo synthesizes the results. The final published article uses the stronger methodology on each dimension.
