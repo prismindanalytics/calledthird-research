@@ -6,6 +6,15 @@ This repository contains the data pipelines, analysis scripts, and methodology d
 
 ## Projects
 
+### 🧭 [The Coaching Gap](./coaching-gap/)
+Does pitcher predictability translate into hitter wOBA — and if so, *which* hitters actually extract the edge?
+
+- **Article:** [The Coaching Gap That Lives Where Hitters Don't Chase](https://calledthird.com/analysis/coaching-gap-patience)
+- **Live tracker:** [Explore → Coaching Gap](https://calledthird.com/explore#coaching-gap) (chase trajectories, live 2025→2026 scatter)
+- **Data:** ~2.9M pitches across 5 seasons (2022–2026); 371-pitcher pre-registered cohort; 659 completed hitter-season transitions
+- **Approach:** Six rounds of dual-agent (Claude + Codex) independent analysis with cross-review at every round; 17 hypotheses pre-registered with kill criteria
+- **Key finding:** 16 of 17 hypotheses died. The one survivor: **low-chase hitters extract ~0.04 more wOBA on predictable pitches than chasers do** (pooled/FE converged across both agents; replicates every season 2022–2026 including strict 2026 holdout). Mechanism validated at the per-hitter level — reducing overall chase by 1pp cuts chase on predictable bait by ~1pp too (Spearman +0.53 across 659 transitions).
+
 ### 🎯 [Pitch Tunneling Atlas](./pitch-tunneling-atlas/)
 League-wide pitch tunneling model measuring deception via trajectory physics.
 
