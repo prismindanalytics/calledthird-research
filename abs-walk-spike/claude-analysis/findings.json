@@ -1,0 +1,186 @@
+{
+  "agent": "claude",
+  "round": 1,
+  "data_window_primary_yoy": "2025 Mar 27-Apr 14 vs 2026 Mar 27-Apr 14",
+  "data_window_full_2026": "2026 Mar 27-Apr 22 (for Z-score against 2018-2025 history)",
+  "h1_zone_shrank": true,
+  "h1_zone_changed_either_direction": true,
+  "h1_largest_delta_region": {
+    "x_range": [
+      0.20000000000000018,
+      0.8
+    ],
+    "z_range": [
+      1.4,
+      1.8
+    ],
+    "delta_pp": 21.80230549815555,
+    "ci_low_pp": 4.605067039927513,
+    "ci_high_pp": 39.27442624025128,
+    "size_cells": 15,
+    "area_sqft": 0.15000000000000002,
+    "n_pitches_in_region": 649,
+    "sign": "expansion"
+  },
+  "h1_largest_top_shrinkage_region": {
+    "x_range": [
+      -0.7999999999999999,
+      -0.5999999999999999
+    ],
+    "z_range": [
+      3.1,
+      3.4000000000000004
+    ],
+    "delta_pp": -24.943273780483082,
+    "ci_low_pp": -46.493029179549026,
+    "ci_high_pp": -3.9689203229069014,
+    "n_pitches_in_region": 130
+  },
+  "h1_largest_bottom_expansion_region": {
+    "x_range": [
+      0.20000000000000018,
+      0.8
+    ],
+    "z_range": [
+      1.4,
+      1.8
+    ],
+    "delta_pp": 21.80230549815555,
+    "ci_low_pp": 4.605067039927513,
+    "ci_high_pp": 39.27442624025128,
+    "n_pitches_in_region": 649
+  },
+  "h1_total_zone_area_with_significant_negative_delta_sqft": 0.18000000000000002,
+  "h1_total_zone_area_with_significant_positive_delta_sqft": 0.24000000000000005,
+  "h1_zone_rings_summary": [
+    {
+      "label": "rule-book interior",
+      "n_cells": 193,
+      "n_pitches_min_year": 7256,
+      "wmean_delta_pp_x100": 2.5389064975552156,
+      "frac_cells_sig_neg": 0.025906735751295335,
+      "frac_cells_sig_pos": 0.09844559585492228
+    },
+    {
+      "label": "top edge band (+/- 0.2ft of 3.5ft)",
+      "n_cells": 8,
+      "n_pitches_min_year": 247,
+      "wmean_delta_pp_x100": -22.439481277168312,
+      "frac_cells_sig_neg": 0.5,
+      "frac_cells_sig_pos": 0.0
+    },
+    {
+      "label": "bottom edge band (+/- 0.2ft of 1.5ft)",
+      "n_cells": 55,
+      "n_pitches_min_year": 2084,
+      "wmean_delta_pp_x100": 10.313924248013674,
+      "frac_cells_sig_neg": 0.0,
+      "frac_cells_sig_pos": 0.36363636363636365
+    },
+    {
+      "label": "above rule-book box (z>3.5ft)",
+      "n_cells": 2,
+      "n_pitches_min_year": 62,
+      "wmean_delta_pp_x100": -8.633776091081595,
+      "frac_cells_sig_neg": 0.0,
+      "frac_cells_sig_pos": 0.0
+    },
+    {
+      "label": "below rule-book box (z<1.5ft)",
+      "n_cells": 54,
+      "n_pitches_min_year": 1885,
+      "wmean_delta_pp_x100": 0.9506900593575958,
+      "frac_cells_sig_neg": 0.0,
+      "frac_cells_sig_pos": 0.037037037037037035
+    }
+  ],
+  "h1_gam_lrt_p_interaction_vs_additive": 0.0,
+  "h1_gam_term_p_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "h1_gam_deviance_drop_with_interaction": 580.4978237717769,
+  "h1_gam_edf_added_with_interaction": 10.171815632893347,
+  "h2_z_score_incl_ibb": 4.4086912626356325,
+  "h2_z_score_excl_ibb": 6.363153610776354,
+  "h2_z_ci95_bootstrap_incl_ibb": [
+    3.5573423803461743,
+    17.05277410168456
+  ],
+  "h2_above_prior_max_pp_incl_ibb": 0.5986027152203963,
+  "h2_above_prior_max_pp_excl_ibb": 0.5733017288409858,
+  "h2_percentile_rank_in_2018_2026": [
+    8,
+    8
+  ],
+  "h2_walk_rate_2026_full_window": 0.09770114942528736,
+  "h2_walk_rate_2026_primary_window": 0.09923868754021016,
+  "h2_walk_rate_2025_primary_window": 0.0911,
+  "h2_passed": true,
+  "h3_three_two_walk_delta_pp": -0.10646146095113496,
+  "h3_all_counts_walk_delta_pp": 0.8195571781190416,
+  "h3_ratio": -0.12990120005473407,
+  "h3_heterogeneity_p_value": 0.4818032410853559,
+  "h3_cochran_Q": 8.446767931180403,
+  "h3_cochran_p": 0.6728117208728042,
+  "h3_passed": false,
+  "h3_per_count_delta_pp_x100": {
+    "0-0": 0.8195571781190416,
+    "0-1": 0.23723043621297138,
+    "0-2": -0.07511959987207481,
+    "1-0": 1.270342392190471,
+    "1-1": 1.048531424360459,
+    "1-2": 0.16922960925917774,
+    "2-0": 0.8842422316063525,
+    "2-1": 0.479075923915781,
+    "2-2": 0.05726094155659445,
+    "3-0": -1.4205919240764975,
+    "3-1": 1.219082370990815,
+    "3-2": -0.10646146095113496
+  },
+  "supplementary_first_pitch_called_strike_2025": 0.4531198415318587,
+  "supplementary_first_pitch_called_strike_2026": 0.43543758967001434,
+  "supplementary_first_pitch_called_strike_delta_pp": -1.7682251861844356,
+  "supplementary_traffic_decomposition_3balls": {
+    "delta_total_pooled_walkrate_pp": 0.8195571781190416,
+    "frac_pa_first_reach_3balls_25": 4.362953553874192,
+    "frac_pa_first_reach_3balls_26": 5.248766888269355,
+    "frac_3balls_traffic_delta_pp": 0.8858133343951622,
+    "rows": [
+      {
+        "count": "3-0",
+        "reach_25": 0.04362953553874192,
+        "reach_26": 0.052487668882693544,
+        "walk_rate_25": 0.6873417721518987,
+        "walk_rate_26": 0.6731358529111338,
+        "traffic_delta_pp": 0.8858133343951622,
+        "conditional_delta_pp": -1.4205919240764975
+      },
+      {
+        "count": "3-1",
+        "reach_25": 0.08444248080852709,
+        "reach_26": 0.0930195153334763,
+        "walk_rate_25": 0.460431654676259,
+        "walk_rate_26": 0.47262247838616717,
+        "traffic_delta_pp": 0.8577034524949206,
+        "conditional_delta_pp": 1.219082370990815
+      },
+      {
+        "count": "3-2",
+        "reach_25": 0.1455790578229414,
+        "reach_26": 0.14920651940810636,
+        "walk_rate_25": 0.3330804248861912,
+        "walk_rate_26": 0.33201581027667987,
+        "traffic_delta_pp": 0.36274615851649705,
+        "conditional_delta_pp": -0.10646146095113496
+      }
+    ]
+  },
+  "editorial_branch_recommendation": "B1_zone_confirmed",
+  "headline_one_sentence": "The zone moved up: 2026's ABS-defined zone shrank at the top (15-25pp drop in called-strike rate above ~3.1 ft, p<<0.001) and expanded at the bottom (~20pp rise around 1.5-1.7 ft); the +0.82pp walk spike is upstream-driven (more PAs reach 3-ball counts), not concentrated at 3-2.",
+  "median_sz_top_pooled": 3.28933727,
+  "median_sz_bot_pooled": 1.620620079
+}

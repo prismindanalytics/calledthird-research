@@ -1,0 +1,89 @@
+{
+  "_comment": "Pre-validated data summary for the abs-walk-spike agents. Numbers here were computed by the orchestrator before agent launch. Agents should re-derive in their own pipelines and report any discrepancies.",
+  "validated_at_utc": "2026-04-23",
+  "datasets": {
+    "statcast_2026": {
+      "path": "data/statcast_2026_mar27_apr22.parquet",
+      "rows": 106770,
+      "columns": 118,
+      "date_min": "2026-03-27",
+      "date_max": "2026-04-22"
+    },
+    "statcast_2025_same_window": {
+      "path": "../count-distribution-abs/data/statcast_2025_mar27_apr14.parquet",
+      "rows": 70876,
+      "columns": 118,
+      "date_min": "2025-03-27",
+      "date_max": "2025-04-14",
+      "note": "Only goes to Apr 14. For apples-to-apples Mar 27-Apr 22 vs 2026, agent must re-pull or accept 2025 ends Apr 14."
+    },
+    "statcast_2025_full": {
+      "path": "../count-distribution-abs/data/statcast_2025_full.parquet",
+      "size_mb": 108,
+      "note": "Full 2025 season — useful if agent wants to extend the 2025 window to match 2026."
+    },
+    "april_walk_history": {
+      "path": "data/april_walk_history.csv",
+      "years_covered": [2018, 2019, 2021, 2022, 2023, 2024, 2025],
+      "year_missing": 2020,
+      "year_missing_reason": "COVID — no MLB games in March/April 2020",
+      "window": "Mar 27 - Apr 22 each year (apples-to-apples with 2026)",
+      "schema_columns": [
+        "year", "season_pas",
+        "season_walks_excl_ibb", "season_walks_incl_ibb",
+        "walk_rate_excl_ibb", "walk_rate_incl_ibb"
+      ]
+    }
+  },
+  "validated_baseline_numbers": {
+    "_comment": "All YoY numbers below use Mar 27 - Apr 14 (the window 2025 same-window parquet covers). Use these for apples-to-apples YoY tests.",
+    "year_2025_mar27_apr14_walk_rate_incl_ibb": 0.0911,
+    "year_2026_mar27_apr14_walk_rate_incl_ibb": 0.0992,
+    "yoy_delta_pp_incl_ibb": 0.82,
+    "yoy_delta_relative_pct": 9.0,
+    "year_2026_full_window_mar27_apr22_walk_rate_incl_ibb": 0.0977,
+    "year_2026_full_window_walk_rate_excl_ibb": 0.0944,
+    "espn_quoted_walk_rate_through_apr_22": 0.098,
+    "espn_match_note": "Our 9.77% incl IBB matches ESPN's 9.8% claim within rounding."
+  },
+  "h2_seasonality_test": {
+    "_comment": "Pre-computed by orchestrator. Agents must independently confirm.",
+    "historical_window": "Mar 27 - Apr 22 each year",
+    "historical_years": [2018, 2019, 2021, 2022, 2023, 2024, 2025],
+    "historical_mean_walk_rate_incl_ibb": 0.0902,
+    "historical_sd_walk_rate_incl_ibb": 0.00171,
+    "historical_min_walk_rate_incl_ibb": 0.0869,
+    "historical_max_walk_rate_incl_ibb": 0.0917,
+    "year_2026_z_score_incl_ibb": 4.41,
+    "year_2026_z_score_excl_ibb": 6.38,
+    "year_2026_above_prior_max_pp": 0.60,
+    "h2_threshold_z": 1.5,
+    "h2_outcome": "PASS — 2026 is 4.4 sigma above 2018-2025 April distribution. Walk spike is NOT seasonality."
+  },
+  "data_quality_notes": [
+    "Use events.notna() & events != '' as PA-terminating rule.",
+    "Headline walks include intentional walks (events in {'walk', 'intent_walk'}).",
+    "Exclude description in {'automatic_ball', 'automatic_strike'} from 'called pitches' subset — those are ABS challenge artifacts, not human zone calls.",
+    "sz_top and sz_bot are per-batter Statcast estimates of the human zone, not the new ABS zone. Use only as references; primary heat map should be in absolute (plate_x, plate_z) and supplementary in height-normalized.",
+    "2025 same-window parquet ends Apr 14. To compare full Mar 27-Apr 22 in both years, use statcast_2025_full and filter."
+  ],
+  "called_pitch_counts_validated": {
+    "year_2025_mar27_apr14": {
+      "called_strike": 11572,
+      "ball": 23942,
+      "automatic_ball": 294,
+      "called_pitches_total_excl_auto": 35514
+    },
+    "year_2026_mar27_apr22": {
+      "called_strike": 17638,
+      "ball": 36827,
+      "automatic_ball": 370,
+      "automatic_strike": 13,
+      "called_pitches_total_excl_auto": 54465
+    }
+  },
+  "h2_kill_gate_5_check": {
+    "threshold": 10000,
+    "comment": "Both seasons have >>10K called pitches. Sample sufficiency easily met."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "method": "clean third-implementation, absolute coords, averaging across draws, continuation probs",
+  "n_2025_pa": 18107,
+  "n_2026_pa": 18652,
+  "actual_2025_walk_rate": 0.09106975202960181,
+  "actual_2026_walk_rate": 0.09923868754021016,
+  "yoy_delta_pp": 0.8168935510608349,
+  "n_draws_per_pa": 32,
+  "all_pitches": {
+    "cf_walk_rate": 0.09520333261894556,
+    "attribution_pct": 49.39878538671534,
+    "unresolved_share": 0.05400604104157737
+  },
+  "count_0_0_only": {
+    "cf_walk_rate": 0.10090615623660523,
+    "attribution_pct": -20.412313137123707,
+    "unresolved_share": 0.013240730818688384
+  },
+  "first_called_pitch_only": {
+    "cf_walk_rate": 0.09826403771967424,
+    "attribution_pct": 11.93117290827213,
+    "unresolved_share": 0.013220638662666095
+  }
+}

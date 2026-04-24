@@ -1,0 +1,54 @@
+{
+  "method": "absolute plate_z coords, polynomial-2 logistic, no sz_top/sz_bot/batter_height features",
+  "n_25_called": 35514,
+  "n_26_called": 37515,
+  "n_25_pa": 18032,
+  "n_26_pa": 18585,
+  "actual_2025_walk_rate_incl_ibb": 0.08745563442768411,
+  "actual_2026_walk_rate_incl_ibb": 0.09615281140704869,
+  "yoy_walk_rate_delta_pp": 0.8697176979364576,
+  "largest_significant_positive_region_absolute": {
+    "x_range": [
+      -0.7372881355932203,
+      0.8389830508474576
+    ],
+    "z_range": [
+      1.1075949367088609,
+      2.069620253164557
+    ],
+    "mean_delta_pp": 6.499324785781411,
+    "max_abs_delta_pp": 11.65991522466203,
+    "n_cells": 395
+  },
+  "largest_significant_negative_region_absolute": {
+    "x_range": [
+      -1.1440677966101696,
+      1.1440677966101696
+    ],
+    "z_range": [
+      2.069620253164557,
+      3.892405063291139
+    ],
+    "mean_delta_pp": -8.803728334780832,
+    "max_abs_delta_pp": 18.110602538089083,
+    "n_cells": 787
+  },
+  "single_cell_max_positive_absolute": {
+    "x": 0.07627118644067798,
+    "z": 1.3607594936708862,
+    "delta_pp": 11.65991522466203
+  },
+  "single_cell_max_negative_absolute": {
+    "x": -0.025423728813559254,
+    "z": 3.588607594936709,
+    "delta_pp": -18.110602538089083
+  },
+  "counterfactual_all_called_pitches_walk_rate": 0.10016111707841031,
+  "counterfactual_all_called_pitches_attribution_pct": -46.08743366809667,
+  "counterfactual_first_pitch_only_walk_rate": 0.1001718766784832,
+  "counterfactual_first_pitch_only_attribution_pct": -46.211147375411215,
+  "year_classifier_location_only_auc_mean": 0.5244021787333244,
+  "year_classifier_location_only_auc_std": 0.0021684696716793507,
+  "n_bootstrap_zone_delta": 100,
+  "seed": 20260423
+}
