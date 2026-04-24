@@ -6,6 +6,16 @@ This repository contains the data pipelines, analysis scripts, and methodology d
 
 ## Projects
 
+### 📍 [ABS Walk Spike — Round 1](./abs-walk-spike/)
+Did the new 2026 ABS-defined zone cause the walk-rate spike? How much of it?
+
+- **Article:** [ABS Took the High Strike — and That's Roughly 40-50% of the Walk Spike. Pitchers Own the Rest.](https://calledthird.com/analysis/abs-walk-spike-zone-correction)
+- **Prior position (now updated):** [The Walk Rate Spike: Umpires or Pitchers?](https://calledthird.com/analysis/the-walk-rate-spike) — said "pitchers, not umpires"; this Round 1 piece is the honest update.
+- **Data:** 2025 vs 2026 Statcast pitch-by-pitch (Mar 27 – Apr 22 matched window), plus 2018–2025 April aggregates for the Z-score baseline
+- **Approach:** Dual-agent (Claude interpretability vs Codex ML) with adjudication round to resolve a 96-point counterfactual sign disagreement; third independent implementation as triangulation; both agents issued written publish-readiness reviews on the resolved synthesis
+- **Key finding:** **The 2026 zone moved up — top edge shrank ~7-8pp called-strike rate, bottom expanded ~5-6pp. Roughly 40-50% of the +0.82pp walk spike is the zone change. Pitcher behavior accounts for the rest.** Walk spike is +4.4σ above the 2018-2025 April distribution (not seasonality). 3-2 walk-rate delta is essentially zero (Cochran's Q p=0.67) — no count-leverage concentration.
+- **Methodology note:** The original Codex normalized-coordinate counterfactual returned −56.17% attribution; Claude's cross-review identified a Statcast schema artifact (2026 `sz_top`/`sz_bot` switched to deterministic per-batter ABS values), and the absolute-coord rerun flipped to +40.46%. The buggy orchestrator first attempt is included in `scripts/` for transparency.
+
 ### 🧭 [The Coaching Gap](./coaching-gap/)
 Does pitcher predictability translate into hitter wOBA — and if so, *which* hitters actually extract the edge?
 
