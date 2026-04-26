@@ -1,0 +1,268 @@
+{
+  "hitters": {
+    "andy_pages": [
+      {
+        "cosine_sim": 0.9340619458580117,
+        "first22_woba": 0.4417582417582418,
+        "mlbam": 543510,
+        "player": "james mccann",
+        "ros_babip": 0.3288888888888889,
+        "ros_iso": 0.17464788732394365,
+        "ros_woba": 0.33629242819843347,
+        "year": 2019
+      },
+      {
+        "cosine_sim": 0.9328404979254776,
+        "first22_woba": 0.4431818181818182,
+        "mlbam": 680776,
+        "player": "jarren duran",
+        "ros_babip": 0.34806629834254144,
+        "ros_iso": 0.17254901960784313,
+        "ros_woba": 0.341025641025641,
+        "year": 2023
+      },
+      {
+        "cosine_sim": 0.9091530681966477,
+        "first22_woba": 0.4032967032967033,
+        "mlbam": 593428,
+        "player": "xander bogaerts",
+        "ros_babip": 0.34332425068119893,
+        "ros_iso": 0.1522198731501057,
+        "ros_woba": 0.3673507462686567,
+        "year": 2022
+      },
+      {
+        "cosine_sim": 0.9020682336993182,
+        "first22_woba": 0.41923076923076924,
+        "mlbam": 545341,
+        "player": "randal grichuk",
+        "ros_babip": 0.27307692307692305,
+        "ros_iso": 0.2011331444759207,
+        "ros_woba": 0.3246031746031746,
+        "year": 2023
+      },
+      {
+        "cosine_sim": 0.9015595871423507,
+        "first22_woba": 0.40309278350515465,
+        "mlbam": 621020,
+        "player": "dansby swanson",
+        "ros_babip": 0.2616487455197133,
+        "ros_iso": 0.1520618556701031,
+        "ros_woba": 0.3066265060240964,
+        "year": 2018
+      }
+    ],
+    "ben_rice": [
+      {
+        "cosine_sim": 0.9615897337640299,
+        "first22_woba": 0.5595744680851064,
+        "mlbam": 519346,
+        "player": "eric thames",
+        "ros_babip": 0.29694323144104806,
+        "ros_iso": 0.22448979591836735,
+        "ros_woba": 0.34555555555555556,
+        "year": 2017
+      },
+      {
+        "cosine_sim": 0.9596870705093588,
+        "first22_woba": 0.4810344827586207,
+        "mlbam": 596129,
+        "player": "dan vogelbach",
+        "ros_babip": 0.21862348178137653,
+        "ros_iso": 0.1964735516372796,
+        "ros_woba": 0.32419700214132763,
+        "year": 2019
+      },
+      {
+        "cosine_sim": 0.9592878487576166,
+        "first22_woba": 0.44784946236559137,
+        "mlbam": 573627,
+        "player": "kennys vargas",
+        "ros_babip": 0.225,
+        "ros_iso": 0.18666666666666665,
+        "ros_woba": 0.26951219512195124,
+        "year": 2016
+      },
+      {
+        "cosine_sim": 0.9563688299224112,
+        "first22_woba": 0.453804347826087,
+        "mlbam": 641933,
+        "player": "tyler o'neill",
+        "ros_babip": 0.29775280898876405,
+        "ros_iso": 0.24924924924924927,
+        "ros_woba": 0.34827127659574464,
+        "year": 2024
+      },
+      {
+        "cosine_sim": 0.9435383712411858,
+        "first22_woba": 0.4680232558139535,
+        "mlbam": 543543,
+        "player": "brad miller",
+        "ros_babip": 0.20454545454545456,
+        "ros_iso": 0.12162162162162163,
+        "ros_woba": 0.26964285714285713,
+        "year": 2020
+      }
+    ],
+    "mike_trout": [
+      {
+        "cosine_sim": 0.9246177519673869,
+        "first22_woba": 0.5044444444444445,
+        "mlbam": 545361,
+        "player": "Mike Trout",
+        "ros_babip": 0.3,
+        "ros_iso": 0.3564356435643565,
+        "ros_woba": 0.46181262729124234,
+        "year": 2019
+      },
+      {
+        "cosine_sim": 0.9212406873202494,
+        "first22_woba": 0.3958333333333333,
+        "mlbam": 665742,
+        "player": "juan soto",
+        "ros_babip": 0.24709302325581395,
+        "ros_iso": 0.20935412026726058,
+        "ros_woba": 0.3858540925266904,
+        "year": 2022
+      },
+      {
+        "cosine_sim": 0.9141062162605375,
+        "first22_woba": 0.38021978021978026,
+        "mlbam": 663757,
+        "player": "trent grisham",
+        "ros_babip": 0.3191489361702128,
+        "ros_iso": 0.18571428571428572,
+        "ros_woba": 0.360377358490566,
+        "year": 2020
+      },
+      {
+        "cosine_sim": 0.9061846414638506,
+        "first22_woba": 0.4218085106382979,
+        "mlbam": 669221,
+        "player": "sean murphy",
+        "ros_babip": 0.28431372549019607,
+        "ros_iso": 0.20068027210884354,
+        "ros_woba": 0.3607558139534884,
+        "year": 2023
+      },
+      {
+        "cosine_sim": 0.9061526503337366,
+        "first22_woba": 0.38247422680412374,
+        "mlbam": 572761,
+        "player": "matt carpenter",
+        "ros_babip": 0.3116438356164384,
+        "ros_iso": 0.23857868020304573,
+        "ros_woba": 0.39557522123893807,
+        "year": 2016
+      }
+    ],
+    "moises_ballesteros": [
+      {
+        "cosine_sim": 0.9328762834886221,
+        "first22_woba": 0.4724489795918368,
+        "mlbam": 430605,
+        "player": "ryan raburn",
+        "ros_babip": 0.2636363636363636,
+        "ros_iso": 0.14444444444444443,
+        "ros_woba": 0.28259803921568627,
+        "year": 2016
+      },
+      {
+        "cosine_sim": 0.9225053008210367,
+        "first22_woba": 0.47027027027027024,
+        "mlbam": 545350,
+        "player": "jake marisnick",
+        "ros_babip": 0.2742857142857143,
+        "ros_iso": 0.12087912087912087,
+        "ros_woba": 0.2712014134275618,
+        "year": 2015
+      },
+      {
+        "cosine_sim": 0.8947034948240823,
+        "first22_woba": 0.49921875,
+        "mlbam": 572204,
+        "player": "trayce thompson",
+        "ros_babip": 0.2553191489361702,
+        "ros_iso": 0.16393442622950818,
+        "ros_woba": 0.3021739130434783,
+        "year": 2015
+      },
+      {
+        "cosine_sim": 0.8862229329399831,
+        "first22_woba": 0.42909090909090913,
+        "mlbam": 570481,
+        "player": "erik gonz\u00e1lez",
+        "ros_babip": 0.2857142857142857,
+        "ros_iso": 0.048192771084337366,
+        "ros_woba": 0.26352941176470585,
+        "year": 2018
+      },
+      {
+        "cosine_sim": 0.8846283347837554,
+        "first22_woba": 0.45263157894736844,
+        "mlbam": 600303,
+        "player": "tommy la stella",
+        "ros_babip": 0.2972972972972973,
+        "ros_iso": 0.06315789473684208,
+        "ros_woba": 0.32211538461538464,
+        "year": 2016
+      }
+    ],
+    "munetaka_murakami": []
+  },
+  "min_cosine_similarity": 0.7,
+  "pitchers": {
+    "mason_miller": [
+      {
+        "cosine_sim": 0.9719274065429131,
+        "first22_ra9": 1.8,
+        "mlbam": 518813,
+        "player": "greg holland",
+        "ros_bb_rate": 0.11949685534591195,
+        "ros_k_rate": 0.2578616352201258,
+        "ros_ra9": 5.697247706422018,
+        "year": 2017
+      },
+      {
+        "cosine_sim": 0.9605319574088367,
+        "first22_ra9": 1.9852941176470587,
+        "mlbam": 518886,
+        "player": "craig kimbrel",
+        "ros_bb_rate": 0.1,
+        "ros_k_rate": 0.4266666666666667,
+        "ros_ra9": 3.133928571428571,
+        "year": 2021
+      },
+      {
+        "cosine_sim": 0.960417203248465,
+        "first22_ra9": 2.82089552238806,
+        "mlbam": 593576,
+        "player": "h\u00e9ctor neris",
+        "ros_bb_rate": 0.09239130434782608,
+        "ros_k_rate": 0.30978260869565216,
+        "ros_ra9": 4.060150375939849,
+        "year": 2019
+      },
+      {
+        "cosine_sim": 0.9573404125257652,
+        "first22_ra9": 1.2461538461538462,
+        "mlbam": 623352,
+        "player": "josh hader",
+        "ros_bb_rate": 0.11188811188811189,
+        "ros_k_rate": 0.45454545454545453,
+        "ros_ra9": 1.9636363636363638,
+        "year": 2021
+      },
+      {
+        "cosine_sim": 0.9535107342405804,
+        "first22_ra9": 2.0454545454545454,
+        "mlbam": 621242,
+        "player": "edwin d\u00edaz",
+        "ros_bb_rate": 0.041025641025641026,
+        "ros_k_rate": 0.4358974358974359,
+        "ros_ra9": 2.52,
+        "year": 2018
+      }
+    ]
+  }
+}

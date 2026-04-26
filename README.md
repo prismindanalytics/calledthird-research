@@ -6,6 +6,15 @@ This repository contains the data pipelines, analysis scripts, and methodology d
 
 ## Projects
 
+### 🚦 [The Hot-Start Half-Life — Three Rounds](./hot-start-half-life/)
+Which 2026 April hot starters are real, which are noise, and which sleepers does nobody know about?
+
+- **Article:** [The April Sell List](https://calledthird.com/analysis/april-sell-list)
+- **Data:** Statcast 2022-2026 (universe scan: 287 hitters with 50+ PA, 218 relievers with 25+ BF as of 2026-04-24); ESPN/MLB.com/Yahoo top-20 hot-starter leaderboards as the "mainstream coverage" reference set
+- **Approach:** Three rounds of dual-agent (Claude Bayesian + Codex LightGBM) with full cross-review at each round and an editorial constraint of "ship only when both agree." Universe scan, per-component persistence model, xwOBA-gap analysis, reliever K% true-talent board.
+- **Key finding:** **All six MVP-pace mainstream hot starters (Pages, Rice, Trout, Judge, Carroll, Muncy) collapse to NOISE in both methods.** Six convergent sleeper hitters surface (Caglianone, Pereira, Barrosa, Basallo, Mayo, House) plus four sleeper relievers (Senzatela, Lynch, King, Kilian). Murakami is the only big-name signal, with explicit method-disagreement disclosure due to the missing NPB-translation prior.
+- **Methodology note:** Two named retractions during the three rounds — R1's "three of five stabilization rates shifted vs Carleton" died when the bootstrap was redone at the player-season level; R2's "Rice/Trout SIGNAL via contact-quality features" died when a hand-tuned 50/50 wOBA+xwOBA blend was replaced with a learned-coefficient blend that validated on holdout. Both retractions are in the published article.
+
 ### 📍 [ABS Walk Spike — Round 1](./abs-walk-spike/)
 Did the new 2026 ABS-defined zone cause the walk-rate spike? How much of it?
 

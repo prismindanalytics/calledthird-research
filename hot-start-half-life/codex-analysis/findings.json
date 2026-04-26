@@ -1,0 +1,1003 @@
+{
+  "era_counterfactual": {
+    "avg_delta": -0.0012333276967888525,
+    "ci": [
+      -0.019634717756105435,
+      0.015229512960241099
+    ],
+    "n_boot": 100,
+    "players": [
+      {
+        "ci": [
+          -0.020589528349671593,
+          0.02303389469075572
+        ],
+        "mean_broad": 0.3288319003802531,
+        "mean_current": 0.3306858201697997,
+        "mean_delta": 0.0018539197895465615,
+        "player": "Andy Pages",
+        "player_key": "andy_pages"
+      },
+      {
+        "ci": [
+          -0.044331984990433435,
+          0.030145178802457023
+        ],
+        "mean_broad": 0.34623662446988035,
+        "mean_current": 0.3430655880834951,
+        "mean_delta": -0.003171036386385243,
+        "player": "Ben Rice",
+        "player_key": "ben_rice"
+      },
+      {
+        "ci": [
+          -0.04259056597663148,
+          0.02054286237090953
+        ],
+        "mean_broad": 0.3807330475328886,
+        "mean_current": 0.3705896092437756,
+        "mean_delta": -0.0101434382891129,
+        "player": "Mike Trout",
+        "player_key": "mike_trout"
+      },
+      {
+        "ci": [
+          -0.03218242806764423,
+          0.03960303550642532
+        ],
+        "mean_broad": 0.336770992415046,
+        "mean_current": 0.34329823651384217,
+        "mean_delta": 0.006527244098796172,
+        "player": "Mois\u00e9s Ballesteros",
+        "player_key": "moises_ballesteros"
+      }
+    ]
+  },
+  "feature_importance_top10": [
+    {
+      "feature": "pa_22g",
+      "permutation_importance": 0.0011295583746181324,
+      "permutation_std": 0.0002944880433258145
+    },
+    {
+      "feature": "preseason_prior_woba",
+      "permutation_importance": 0.0009458183925721623,
+      "permutation_std": 0.0002504492433978494
+    },
+    {
+      "feature": "ev_p90_22g",
+      "permutation_importance": 0.0008148986917192284,
+      "permutation_std": 0.00027788061902080585
+    },
+    {
+      "feature": "whiff_per_swing_22g",
+      "permutation_importance": 0.0003998480784787962,
+      "permutation_std": 0.00014089402915704
+    },
+    {
+      "feature": "xwoba_22g",
+      "permutation_importance": 0.0003140158490456129,
+      "permutation_std": 0.0001460778956645732
+    },
+    {
+      "feature": "preseason_prior_k_rate",
+      "permutation_importance": 0.00018121712192869927,
+      "permutation_std": 5.188040197541292e-05
+    },
+    {
+      "feature": "barrel_rate_22g",
+      "permutation_importance": 0.00010595681399803644,
+      "permutation_std": 0.00021320391698955856
+    },
+    {
+      "feature": "preseason_prior_iso",
+      "permutation_importance": 9.713491983789901e-05,
+      "permutation_std": 8.248545851838153e-05
+    },
+    {
+      "feature": "bb_rate_22g",
+      "permutation_importance": 7.942167100825857e-05,
+      "permutation_std": 0.00010126378375565273
+    },
+    {
+      "feature": "k_rate_22g",
+      "permutation_importance": 5.8941265263472846e-05,
+      "permutation_std": 4.1595966286858366e-05
+    }
+  ],
+  "lgbm_test_metrics": {
+    "full_woba": {
+      "best_iteration": 134,
+      "test": {
+        "mae": 0.02336244594591101,
+        "n": 426,
+        "r2": 0.4337661389451496,
+        "rmse": 0.0296665104795743
+      },
+      "valid": {
+        "mae": 0.02377366459010921,
+        "n": 426,
+        "r2": 0.4214348133250202,
+        "rmse": 0.029717412961660923
+      }
+    },
+    "ros_woba": {
+      "best_iteration": 114,
+      "test": {
+        "mae": 0.03139580000572788,
+        "n": 426,
+        "r2": 0.1989636476783011,
+        "rmse": 0.040705787287733095
+      },
+      "valid": {
+        "mae": 0.031699999492906326,
+        "n": 426,
+        "r2": 0.1976776145598942,
+        "rmse": 0.04040755737465904
+      }
+    }
+  },
+  "noise_floor": {
+    "BA": {
+      "maintained_90pct_count": 0,
+      "maintained_90pct_rate": 0.0,
+      "n": 20,
+      "records": [
+        {
+          "batter": 670869,
+          "first22": 0.4,
+          "maintained_90pct": false,
+          "ros": null,
+          "season": 2022
+        },
+        {
+          "batter": 592518,
+          "first22": 0.3855421686746988,
+          "maintained_90pct": false,
+          "ros": 0.2828282828282828,
+          "season": 2022
+        },
+        {
+          "batter": 543333,
+          "first22": 0.375,
+          "maintained_90pct": false,
+          "ros": 0.24,
+          "season": 2022
+        },
+        {
+          "batter": 641487,
+          "first22": 0.3717948717948718,
+          "maintained_90pct": false,
+          "ros": 0.21945701357466063,
+          "season": 2022
+        },
+        {
+          "batter": 602074,
+          "first22": 0.3698630136986301,
+          "maintained_90pct": false,
+          "ros": 0.2833333333333333,
+          "season": 2022
+        },
+        {
+          "batter": 650333,
+          "first22": 0.425,
+          "maintained_90pct": false,
+          "ros": 0.34210526315789475,
+          "season": 2023
+        },
+        {
+          "batter": 596103,
+          "first22": 0.40350877192982454,
+          "maintained_90pct": false,
+          "ros": 0.2109375,
+          "season": 2023
+        },
+        {
+          "batter": 672695,
+          "first22": 0.390625,
+          "maintained_90pct": false,
+          "ros": 0.21865889212827988,
+          "season": 2023
+        },
+        {
+          "batter": 676391,
+          "first22": 0.3877551020408163,
+          "maintained_90pct": false,
+          "ros": 0.0,
+          "season": 2023
+        },
+        {
+          "batter": 676914,
+          "first22": 0.38028169014084506,
+          "maintained_90pct": false,
+          "ros": 0.1111111111111111,
+          "season": 2023
+        },
+        {
+          "batter": 669743,
+          "first22": 0.38666666666666666,
+          "maintained_90pct": false,
+          "ros": 0.2,
+          "season": 2024
+        },
+        {
+          "batter": 669364,
+          "first22": 0.3684210526315789,
+          "maintained_90pct": false,
+          "ros": 0.3105263157894737,
+          "season": 2024
+        },
+        {
+          "batter": 514888,
+          "first22": 0.36666666666666664,
+          "maintained_90pct": false,
+          "ros": 0.2820037105751391,
+          "season": 2024
+        },
+        {
+          "batter": 664774,
+          "first22": 0.3584905660377358,
+          "maintained_90pct": false,
+          "ros": 0.24100719424460432,
+          "season": 2024
+        },
+        {
+          "batter": 665161,
+          "first22": 0.3563218390804598,
+          "maintained_90pct": false,
+          "ros": 0.2504854368932039,
+          "season": 2024
+        },
+        {
+          "batter": 808975,
+          "first22": 0.4032258064516129,
+          "maintained_90pct": false,
+          "ros": 0.20202020202020202,
+          "season": 2025
+        },
+        {
+          "batter": 656976,
+          "first22": 0.39655172413793105,
+          "maintained_90pct": false,
+          "ros": 0.21505376344086022,
+          "season": 2025
+        },
+        {
+          "batter": 660670,
+          "first22": 0.3924050632911392,
+          "maintained_90pct": false,
+          "ros": 0.25868725868725867,
+          "season": 2025
+        },
+        {
+          "batter": 592450,
+          "first22": 0.3902439024390244,
+          "maintained_90pct": false,
+          "ros": 0.3202614379084967,
+          "season": 2025
+        },
+        {
+          "batter": 623168,
+          "first22": 0.3880597014925373,
+          "maintained_90pct": false,
+          "ros": 0.2073170731707317,
+          "season": 2025
+        }
+      ]
+    },
+    "OPS": {
+      "maintained_90pct_count": 1,
+      "maintained_90pct_rate": 0.05,
+      "n": 20,
+      "records": [
+        {
+          "batter": 572761,
+          "first22": 1.2267796610169492,
+          "maintained_90pct": false,
+          "ros": 1.0815602836879432,
+          "season": 2022
+        },
+        {
+          "batter": 621493,
+          "first22": 1.1649080086580086,
+          "maintained_90pct": false,
+          "ros": 0.7669901430454276,
+          "season": 2022
+        },
+        {
+          "batter": 608070,
+          "first22": 1.128369704749679,
+          "maintained_90pct": false,
+          "ros": 0.8276901472845433,
+          "season": 2022
+        },
+        {
+          "batter": 545361,
+          "first22": 1.104442925495557,
+          "maintained_90pct": false,
+          "ros": 0.9721642452765842,
+          "season": 2022
+        },
+        {
+          "batter": 641487,
+          "first22": 1.0905707196029777,
+          "maintained_90pct": false,
+          "ros": 0.5984917043740573,
+          "season": 2022
+        },
+        {
+          "batter": 676914,
+          "first22": 1.3420970266040688,
+          "maintained_90pct": false,
+          "ros": 0.4601307189542484,
+          "season": 2023
+        },
+        {
+          "batter": 667670,
+          "first22": 1.2445280437756499,
+          "maintained_90pct": false,
+          "ros": 0.740247410817031,
+          "season": 2023
+        },
+        {
+          "batter": 669016,
+          "first22": 1.1573342493988321,
+          "maintained_90pct": false,
+          "ros": 0.7576078612006756,
+          "season": 2023
+        },
+        {
+          "batter": 571970,
+          "first22": 1.1294209702660407,
+          "maintained_90pct": false,
+          "ros": 0.7521084292388758,
+          "season": 2023
+        },
+        {
+          "batter": 656305,
+          "first22": 1.1048063220624433,
+          "maintained_90pct": false,
+          "ros": 0.6825326743860349,
+          "season": 2023
+        },
+        {
+          "batter": 681297,
+          "first22": 1.1213114754098361,
+          "maintained_90pct": false,
+          "ros": 0.7151346118384658,
+          "season": 2024
+        },
+        {
+          "batter": 605141,
+          "first22": 1.0935064935064935,
+          "maintained_90pct": false,
+          "ros": 0.8061660684760253,
+          "season": 2024
+        },
+        {
+          "batter": 542303,
+          "first22": 1.0764804603212659,
+          "maintained_90pct": false,
+          "ros": 0.8979347928459847,
+          "season": 2024
+        },
+        {
+          "batter": 668904,
+          "first22": 1.0764347713434383,
+          "maintained_90pct": false,
+          "ros": 0.6165236759610625,
+          "season": 2024
+        },
+        {
+          "batter": 641933,
+          "first22": 1.0731214651225423,
+          "maintained_90pct": false,
+          "ros": 0.7902639481586851,
+          "season": 2024
+        },
+        {
+          "batter": 656976,
+          "first22": 1.2586206896551724,
+          "maintained_90pct": false,
+          "ros": 0.6513056835637481,
+          "season": 2025
+        },
+        {
+          "batter": 608348,
+          "first22": 1.228163992869875,
+          "maintained_90pct": false,
+          "ros": 0.6497760218690452,
+          "season": 2025
+        },
+        {
+          "batter": 593871,
+          "first22": 1.226829268292683,
+          "maintained_90pct": false,
+          "ros": 0.744385771151147,
+          "season": 2025
+        },
+        {
+          "batter": 592450,
+          "first22": 1.2022665681202267,
+          "maintained_90pct": true,
+          "ros": 1.1340958605664488,
+          "season": 2025
+        },
+        {
+          "batter": 660670,
+          "first22": 1.1909393737508327,
+          "maintained_90pct": false,
+          "ros": 0.8576422298819775,
+          "season": 2025
+        }
+      ]
+    }
+  },
+  "projection_prior_source": "3-year weighted MLB mean fallback, 5/4/3 weights most recent to oldest; league fallback for no MLB history.",
+  "projections": {
+    "andy_pages": {
+      "analogs": [
+        {
+          "cosine_sim": 0.9340619458580117,
+          "first22_woba": 0.4417582417582418,
+          "mlbam": 543510,
+          "player": "james mccann",
+          "ros_babip": 0.3288888888888889,
+          "ros_iso": 0.17464788732394365,
+          "ros_woba": 0.33629242819843347,
+          "year": 2019
+        },
+        {
+          "cosine_sim": 0.9328404979254776,
+          "first22_woba": 0.4431818181818182,
+          "mlbam": 680776,
+          "player": "jarren duran",
+          "ros_babip": 0.34806629834254144,
+          "ros_iso": 0.17254901960784313,
+          "ros_woba": 0.341025641025641,
+          "year": 2023
+        },
+        {
+          "cosine_sim": 0.9091530681966477,
+          "first22_woba": 0.4032967032967033,
+          "mlbam": 593428,
+          "player": "xander bogaerts",
+          "ros_babip": 0.34332425068119893,
+          "ros_iso": 0.1522198731501057,
+          "ros_woba": 0.3673507462686567,
+          "year": 2022
+        },
+        {
+          "cosine_sim": 0.9020682336993182,
+          "first22_woba": 0.41923076923076924,
+          "mlbam": 545341,
+          "player": "randal grichuk",
+          "ros_babip": 0.27307692307692305,
+          "ros_iso": 0.2011331444759207,
+          "ros_woba": 0.3246031746031746,
+          "year": 2023
+        },
+        {
+          "cosine_sim": 0.9015595871423507,
+          "first22_woba": 0.40309278350515465,
+          "mlbam": 621020,
+          "player": "dansby swanson",
+          "ros_babip": 0.2616487455197133,
+          "ros_iso": 0.1520618556701031,
+          "ros_woba": 0.3066265060240964,
+          "year": 2018
+        }
+      ],
+      "babip": {
+        "q10": 0.2542021603583033,
+        "q50": 0.2989690721649484,
+        "q80": 0.3388510458737718,
+        "q90": 0.3480662983425414
+      },
+      "exclusion_reason": null,
+      "hr_rate": {
+        "q10": 0.0140845070422535,
+        "q50": 0.0292048103712969,
+        "q80": 0.0402476780185758,
+        "q90": 0.0466355785837651
+      },
+      "iso": {
+        "q10": 0.101342957864697,
+        "q50": 0.1696061735976146,
+        "q80": 0.2118924722302515,
+        "q90": 0.2355835872048743
+      },
+      "k_rate": {
+        "q10": 0.1849192100538599,
+        "q50": 0.2421652421652421,
+        "q80": 0.2857142857142857,
+        "q90": 0.3063115138259646
+      },
+      "ops": {
+        "q10": 0.6168965053028862,
+        "q50": 0.73949604890413,
+        "q80": 0.7929454041104527,
+        "q90": 0.8362962962962963
+      },
+      "player": "Andy Pages",
+      "prior_woba": 0.331145361478343,
+      "replacement_for": null,
+      "replacement_reason": null,
+      "verdict": "noise",
+      "woba": {
+        "point": 0.3368747643142994,
+        "q10": 0.2840652973635806,
+        "q50": 0.3292325056433408,
+        "q80": 0.3523908523908524,
+        "q90": 0.3713190561925519
+      }
+    },
+    "ben_rice": {
+      "analogs": [
+        {
+          "cosine_sim": 0.9615897337640299,
+          "first22_woba": 0.5595744680851064,
+          "mlbam": 519346,
+          "player": "eric thames",
+          "ros_babip": 0.29694323144104806,
+          "ros_iso": 0.22448979591836735,
+          "ros_woba": 0.34555555555555556,
+          "year": 2017
+        },
+        {
+          "cosine_sim": 0.9596870705093588,
+          "first22_woba": 0.4810344827586207,
+          "mlbam": 596129,
+          "player": "dan vogelbach",
+          "ros_babip": 0.21862348178137653,
+          "ros_iso": 0.1964735516372796,
+          "ros_woba": 0.32419700214132763,
+          "year": 2019
+        },
+        {
+          "cosine_sim": 0.9592878487576166,
+          "first22_woba": 0.44784946236559137,
+          "mlbam": 573627,
+          "player": "kennys vargas",
+          "ros_babip": 0.225,
+          "ros_iso": 0.18666666666666665,
+          "ros_woba": 0.26951219512195124,
+          "year": 2016
+        },
+        {
+          "cosine_sim": 0.9563688299224112,
+          "first22_woba": 0.453804347826087,
+          "mlbam": 641933,
+          "player": "tyler o'neill",
+          "ros_babip": 0.29775280898876405,
+          "ros_iso": 0.24924924924924927,
+          "ros_woba": 0.34827127659574464,
+          "year": 2024
+        },
+        {
+          "cosine_sim": 0.9435383712411858,
+          "first22_woba": 0.4680232558139535,
+          "mlbam": 543543,
+          "player": "brad miller",
+          "ros_babip": 0.20454545454545456,
+          "ros_iso": 0.12162162162162163,
+          "ros_woba": 0.26964285714285713,
+          "year": 2020
+        }
+      ],
+      "babip": {
+        "q10": 0.2218045112781954,
+        "q50": 0.2938775510204082,
+        "q80": 0.3333333333333333,
+        "q90": 0.3495571690736456
+      },
+      "exclusion_reason": null,
+      "hr_rate": {
+        "q10": 0.0254824652417514,
+        "q50": 0.0477272727272727,
+        "q80": 0.0614544499868731,
+        "q90": 0.0681735405500486
+      },
+      "iso": {
+        "q10": 0.1435406698564593,
+        "q50": 0.2191780821917808,
+        "q80": 0.2699275362318841,
+        "q90": 0.3012634903922087
+      },
+      "k_rate": {
+        "q10": 0.2110874200426439,
+        "q50": 0.2755736868944416,
+        "q80": 0.3250517598343685,
+        "q90": 0.3455244755244755
+      },
+      "ops": {
+        "q10": 0.6393939393939394,
+        "q50": 0.7521084292388758,
+        "q80": 0.8257213588251299,
+        "q90": 0.8979347928459847
+      },
+      "player": "Ben Rice",
+      "prior_woba": 0.325628172723604,
+      "replacement_for": null,
+      "replacement_reason": null,
+      "verdict": "noise",
+      "woba": {
+        "point": 0.3434349796161833,
+        "q10": 0.2949868073878628,
+        "q50": 0.3395973154362416,
+        "q80": 0.3726434426229508,
+        "q90": 0.395954962468724
+      }
+    },
+    "mason_miller": {
+      "analogs": [
+        {
+          "cosine_sim": 0.9719274065429131,
+          "first22_ra9": 1.8,
+          "mlbam": 518813,
+          "player": "greg holland",
+          "ros_bb_rate": 0.11949685534591195,
+          "ros_k_rate": 0.2578616352201258,
+          "ros_ra9": 5.697247706422018,
+          "year": 2017
+        },
+        {
+          "cosine_sim": 0.9605319574088367,
+          "first22_ra9": 1.9852941176470587,
+          "mlbam": 518886,
+          "player": "craig kimbrel",
+          "ros_bb_rate": 0.1,
+          "ros_k_rate": 0.4266666666666667,
+          "ros_ra9": 3.133928571428571,
+          "year": 2021
+        },
+        {
+          "cosine_sim": 0.960417203248465,
+          "first22_ra9": 2.82089552238806,
+          "mlbam": 593576,
+          "player": "h\u00e9ctor neris",
+          "ros_bb_rate": 0.09239130434782608,
+          "ros_k_rate": 0.30978260869565216,
+          "ros_ra9": 4.060150375939849,
+          "year": 2019
+        },
+        {
+          "cosine_sim": 0.9573404125257652,
+          "first22_ra9": 1.2461538461538462,
+          "mlbam": 623352,
+          "player": "josh hader",
+          "ros_bb_rate": 0.11188811188811189,
+          "ros_k_rate": 0.45454545454545453,
+          "ros_ra9": 1.9636363636363638,
+          "year": 2021
+        },
+        {
+          "cosine_sim": 0.9535107342405804,
+          "first22_ra9": 2.0454545454545454,
+          "mlbam": 621242,
+          "player": "edwin d\u00edaz",
+          "ros_bb_rate": 0.041025641025641026,
+          "ros_k_rate": 0.4358974358974359,
+          "ros_ra9": 2.52,
+          "year": 2018
+        }
+      ],
+      "pitching": {
+        "bb_rate": {
+          "q10": 0.0530962210225468,
+          "q50": 0.09375,
+          "q80": 0.125,
+          "q90": 0.1429714285714285
+        },
+        "k_rate": {
+          "q10": 0.2313432835820895,
+          "q50": 0.3025712414018997,
+          "q80": 0.3557046979865771,
+          "q90": 0.3958333333333333
+        },
+        "ra9": {
+          "expected_ip_until_er": 2.2083333333333335,
+          "q10": 2.2090909090909094,
+          "q50": 4.0754716981132075,
+          "q80": 6.0,
+          "q90": 6.967741935483871,
+          "sd_ip_until_er": 2.2083333333333335
+        }
+      },
+      "player": "Mason Miller",
+      "verdict": "noise"
+    },
+    "mike_trout": {
+      "analogs": [
+        {
+          "cosine_sim": 0.9246177519673869,
+          "first22_woba": 0.5044444444444445,
+          "mlbam": 545361,
+          "player": "Mike Trout",
+          "ros_babip": 0.3,
+          "ros_iso": 0.3564356435643565,
+          "ros_woba": 0.46181262729124234,
+          "year": 2019
+        },
+        {
+          "cosine_sim": 0.9212406873202494,
+          "first22_woba": 0.3958333333333333,
+          "mlbam": 665742,
+          "player": "juan soto",
+          "ros_babip": 0.24709302325581395,
+          "ros_iso": 0.20935412026726058,
+          "ros_woba": 0.3858540925266904,
+          "year": 2022
+        },
+        {
+          "cosine_sim": 0.9141062162605375,
+          "first22_woba": 0.38021978021978026,
+          "mlbam": 663757,
+          "player": "trent grisham",
+          "ros_babip": 0.3191489361702128,
+          "ros_iso": 0.18571428571428572,
+          "ros_woba": 0.360377358490566,
+          "year": 2020
+        },
+        {
+          "cosine_sim": 0.9061846414638506,
+          "first22_woba": 0.4218085106382979,
+          "mlbam": 669221,
+          "player": "sean murphy",
+          "ros_babip": 0.28431372549019607,
+          "ros_iso": 0.20068027210884354,
+          "ros_woba": 0.3607558139534884,
+          "year": 2023
+        },
+        {
+          "cosine_sim": 0.9061526503337366,
+          "first22_woba": 0.38247422680412374,
+          "mlbam": 572761,
+          "player": "matt carpenter",
+          "ros_babip": 0.3116438356164384,
+          "ros_iso": 0.23857868020304573,
+          "ros_woba": 0.39557522123893807,
+          "year": 2016
+        }
+      ],
+      "babip": {
+        "q10": 0.2218045112781954,
+        "q50": 0.2851116838487972,
+        "q80": 0.316622691292876,
+        "q90": 0.3357142857142857
+      },
+      "exclusion_reason": null,
+      "hr_rate": {
+        "q10": 0.0290452740679626,
+        "q50": 0.0506607929515418,
+        "q80": 0.0662391449565798,
+        "q90": 0.0777125265173074
+      },
+      "iso": {
+        "q10": 0.1510416666666666,
+        "q50": 0.2329317269076304,
+        "q80": 0.3002544529262086,
+        "q90": 0.3453038674033149
+      },
+      "k_rate": {
+        "q10": 0.1669721656483367,
+        "q50": 0.2444821731748726,
+        "q80": 0.2938271604938272,
+        "q90": 0.3051643192488263
+      },
+      "ops": {
+        "q10": 0.6885309326455726,
+        "q50": 0.8247998517420312,
+        "q80": 0.976110845676063,
+        "q90": 1.0172345657328532
+      },
+      "player": "Mike Trout",
+      "prior_woba": 0.366889245667686,
+      "replacement_for": null,
+      "replacement_reason": null,
+      "verdict": "noise",
+      "woba": {
+        "point": 0.3747841566928125,
+        "q10": 0.324872750470051,
+        "q50": 0.3628365396611522,
+        "q80": 0.4221393034825871,
+        "q90": 0.4374186550976139
+      }
+    },
+    "moises_ballesteros": {
+      "analogs": [
+        {
+          "cosine_sim": 0.9328762834886221,
+          "first22_woba": 0.4724489795918368,
+          "mlbam": 430605,
+          "player": "ryan raburn",
+          "ros_babip": 0.2636363636363636,
+          "ros_iso": 0.14444444444444443,
+          "ros_woba": 0.28259803921568627,
+          "year": 2016
+        },
+        {
+          "cosine_sim": 0.9225053008210367,
+          "first22_woba": 0.47027027027027024,
+          "mlbam": 545350,
+          "player": "jake marisnick",
+          "ros_babip": 0.2742857142857143,
+          "ros_iso": 0.12087912087912087,
+          "ros_woba": 0.2712014134275618,
+          "year": 2015
+        },
+        {
+          "cosine_sim": 0.8947034948240823,
+          "first22_woba": 0.49921875,
+          "mlbam": 572204,
+          "player": "trayce thompson",
+          "ros_babip": 0.2553191489361702,
+          "ros_iso": 0.16393442622950818,
+          "ros_woba": 0.3021739130434783,
+          "year": 2015
+        },
+        {
+          "cosine_sim": 0.8862229329399831,
+          "first22_woba": 0.42909090909090913,
+          "mlbam": 570481,
+          "player": "erik gonz\u00e1lez",
+          "ros_babip": 0.2857142857142857,
+          "ros_iso": 0.048192771084337366,
+          "ros_woba": 0.26352941176470585,
+          "year": 2018
+        },
+        {
+          "cosine_sim": 0.8846283347837554,
+          "first22_woba": 0.45263157894736844,
+          "mlbam": 600303,
+          "player": "tommy la stella",
+          "ros_babip": 0.2972972972972973,
+          "ros_iso": 0.06315789473684208,
+          "ros_woba": 0.32211538461538464,
+          "year": 2016
+        }
+      ],
+      "babip": {
+        "q10": 0.2542372881355932,
+        "q50": 0.3082579185520362,
+        "q80": 0.3442211055276382,
+        "q90": 0.361241610738255
+      },
+      "exclusion_reason": null,
+      "hr_rate": {
+        "q10": 0.0158227848101265,
+        "q50": 0.0342699976684139,
+        "q80": 0.0508783304004198,
+        "q90": 0.0648148148148148
+      },
+      "iso": {
+        "q10": 0.1014492753623188,
+        "q50": 0.1732283464566929,
+        "q80": 0.2266864931846344,
+        "q90": 0.2710015635059322
+      },
+      "k_rate": {
+        "q10": 0.1543739279588336,
+        "q50": 0.2074688796680498,
+        "q80": 0.2554216867469879,
+        "q90": 0.2893931136035493
+      },
+      "ops": {
+        "q10": 0.6005089058524173,
+        "q50": 0.7443221062040385,
+        "q80": 0.8185733302012372,
+        "q90": 0.8981094066544794
+      },
+      "player": "Mois\u00e9s Ballesteros",
+      "prior_woba": 0.4107692307692307,
+      "replacement_for": "Munetaka Murakami",
+      "replacement_reason": "Murakami had no playerid_lookup result and no matching 2026 Statcast cutoff profile; selected top eligible BA leaderboard substitute.",
+      "verdict": "ambiguous",
+      "woba": {
+        "point": 0.3329028218180811,
+        "q10": 0.2780195491031993,
+        "q50": 0.3384968821791926,
+        "q80": 0.3737441510032516,
+        "q90": 0.39679410977754
+      }
+    },
+    "munetaka_murakami": {
+      "analogs": [],
+      "babip": {
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      },
+      "exclusion_reason": "No playerid_lookup result and no NYM hitter in the cutoff Statcast data matched the 7-HR Murakami profile.",
+      "hr_rate": {
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      },
+      "iso": {
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      },
+      "k_rate": {
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      },
+      "ops": {
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      },
+      "player": "Munetaka Murakami",
+      "prior_woba": null,
+      "replacement_for": null,
+      "replacement_reason": null,
+      "verdict": "excluded",
+      "woba": {
+        "point": null,
+        "q10": null,
+        "q50": null,
+        "q80": null,
+        "q90": null
+      }
+    }
+  },
+  "qrf_test_metrics": {
+    "hitter_qrf_metrics_2025": {
+      "babip": {
+        "mae": 0.0334137648161466,
+        "n": 426,
+        "rmse": 0.04467932052269651
+      },
+      "hr_rate": {
+        "mae": 0.010816546072955121,
+        "n": 426,
+        "rmse": 0.013890549833618922
+      },
+      "iso": {
+        "mae": 0.03879877262401217,
+        "n": 426,
+        "rmse": 0.04956338268658171
+      },
+      "k_rate": {
+        "mae": 0.03331806112177013,
+        "n": 426,
+        "rmse": 0.04378483024728861
+      },
+      "ops": {
+        "mae": 0.07657442281315731,
+        "n": 426,
+        "rmse": 0.09949295161848778
+      },
+      "woba": {
+        "mae": 0.0305130001400813,
+        "n": 426,
+        "rmse": 0.039711685419222806
+      }
+    },
+    "pitcher_qrf_metrics_2025": {
+      "bb_rate": {
+        "mae": 0.025731435654056622,
+        "n": 235,
+        "rmse": 0.03385823915937665
+      },
+      "k_rate": {
+        "mae": 0.04501236756869771,
+        "n": 235,
+        "rmse": 0.05716796339226637
+      },
+      "ra9": {
+        "mae": 1.6329240355687669,
+        "n": 235,
+        "rmse": 2.1492456346346365
+      }
+    }
+  },
+  "shap_permutation_spearman": 0.19524464939508912
+}

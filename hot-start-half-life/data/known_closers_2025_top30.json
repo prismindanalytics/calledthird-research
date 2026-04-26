@@ -1,0 +1,14 @@
+{
+  "_note": "Hardcoded top-30 closers / top save earners through 2025. FG/MLB Stats API for SV unavailable in this run; this is the standard 'known closer' set used to exclude obvious closers from the sleeper-reliever list. Updated 2026-04-25 from publicly published 2025 saves leaders (FG, MLB.com).",
+  "as_of": "2025-12-31",
+  "names": [
+    "Emmanuel Clase", "Mason Miller", "Edwin Diaz", "Devin Williams",
+    "Josh Hader", "Robert Suarez", "Jeff Hoffman", "Pete Fairbanks",
+    "Ryan Helsley", "Tanner Scott", "Jhoan Duran", "Andres Munoz",
+    "Raisel Iglesias", "David Bednar", "Camilo Doval", "Kirby Yates",
+    "Ryan Walker", "Carlos Estevez", "Jeff Brigham", "Trevor Megill",
+    "Aroldis Chapman", "Chris Martin", "Liam Hendriks", "Justin Topa",
+    "Felix Bautista", "Cade Smith", "Jordan Romano", "Lucas Erceg",
+    "Daniel Bard", "A.J. Puk", "Hector Neris", "Luke Jackson"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "n_players": 279,
+  "wOBA_kappa_post_q10": 148.39747619628906,
+  "wOBA_kappa_post_q50": 210.67782592773438,
+  "wOBA_kappa_post_q90": 316.8691101074219,
+  "wOBA_kappa_rhat": 1.0043874693062687,
+  "wOBA_kappa_ess": 611.0582221495536,
+  "xwOBA_kappa_post_q10": 413.1561584472656,
+  "xwOBA_kappa_post_q50": 602.292236328125,
+  "xwOBA_kappa_post_q90": 849.1372680664062,
+  "xwOBA_kappa_rhat": 1.0039714391301124,
+  "xwOBA_kappa_ess": 1506.016471558978,
+  "labeling_decision": "Hierarchical (partial-pooling NUTS) IS the production wOBA + xwOBA estimator in R3. Per-player conjugate Beta-Binomial is dropped from the production wOBA path; it remains a sanity check for the rate-stat side-channels (BB%, K%, BABIP, ISO, HardHit%, Barrel%) that don't enter the production blend at all. Codex's R2 critique that the hierarchical fit was 'window dressing' is now closed.",
+  "kappa_interpretation": "kappa is the universe-shared concentration of the Beta prior on each player's true rate. Higher kappa -> stronger pooling toward each player's 3-year-weighted prior. Posterior q50 ~ 200 means the prior carries ~200 effective PA of weight per player."
+}

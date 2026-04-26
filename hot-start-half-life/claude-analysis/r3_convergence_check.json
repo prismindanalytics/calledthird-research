@@ -1,0 +1,100 @@
+{
+  "agent": "claude (Agent A \u2014 interpretability-first)",
+  "round": 3,
+  "as_of": "2026-04-25",
+  "named_starter_verdicts": {
+    "andy_pages": {
+      "verdict": "NOISE",
+      "confidence": "low",
+      "evidence": "April 0.403 wOBA (0.360 xwOBA, EV p90 106.2); prior 0.333; R3 ROS posterior q10/q50/q90 = 0.323/0.327/0.330; delta-vs-prior q10/q50/q90 = -0.010/-0.007/-0.003"
+    },
+    "ben_rice": {
+      "verdict": "NOISE",
+      "confidence": "high",
+      "evidence": "April 0.549 wOBA (0.481 xwOBA, EV p90 106.4); prior 0.345; R3 ROS posterior q10/q50/q90 = 0.343/0.347/0.351; delta-vs-prior q10/q50/q90 = -0.002/+0.002/+0.006"
+    },
+    "mike_trout": {
+      "verdict": "NOISE",
+      "confidence": "high",
+      "evidence": "April 0.420 wOBA (0.476 xwOBA, EV p90 108.7); prior 0.362; R3 ROS posterior q10/q50/q90 = 0.359/0.363/0.367; delta-vs-prior q10/q50/q90 = -0.003/+0.001/+0.005"
+    },
+    "munetaka_murakami": {
+      "verdict": "SIGNAL",
+      "confidence": "medium",
+      "evidence": "April 0.427 wOBA (0.435 xwOBA, EV p90 110.8); prior 0.326; R3 ROS posterior q10/q50/q90 = 0.344/0.347/0.351; delta-vs-prior q10/q50/q90 = +0.018/+0.021/+0.025"
+    },
+    "mason_miller": {
+      "verdict": "SIGNAL",
+      "confidence": "medium",
+      "evidence": "K%-only verdict (streak model killed). April K% 0.650 on 40 BF; 3yr prior K% 0.407; R3 posterior K% q50 = 0.495 (rise of +0.089 that survives heavy reliever-K% shrinkage). Streak survival probabilities are killed; the K% rise is the only durable signal."
+    }
+  },
+  "top10_sleeper_hitters": [
+    "Caglianone, Jac",
+    "Barrosa, Jorge",
+    "Pereira, Everson",
+    "Basallo, Samuel",
+    "Peraza, Oswald",
+    "House, Brady",
+    "Davis, Henry",
+    "Lockridge, Brandon",
+    "Mayo, Coby",
+    "Vivas, Jorbit"
+  ],
+  "top5_sleeper_relievers": [
+    "Senzatela, Antonio",
+    "Kilian, Caleb",
+    "King, John",
+    "Weissert, Greg",
+    "Phillips, Tyler"
+  ],
+  "killed_picks_from_r2": [
+    "hitter: Dingler, Dillon (was in R2 top-10 sleepers; no longer top-15 under R3 learned blend)",
+    "hitter: Vargas, Ildemaro (was in R2 top-10 sleepers; no longer top-15 under R3 learned blend)",
+    "hitter: Lopez, Otto (was in R2 top-10 sleepers; no longer top-15 under R3 learned blend)",
+    "reliever: Varland, Louis (was R2 top-5 sleeper; not top-5 R3 \u2014 coherence rule: he is fake-dominant; cannot be sleeper)",
+    "reliever: Lynch, Daniel (was R2 top-5 sleeper; not top-5 R3 \u2014 coherence rule: he is fake-dominant; cannot be sleeper)"
+  ],
+  "verdicts_changed_from_r2": [
+    {
+      "player": "Ben Rice",
+      "r2": "SIGNAL",
+      "r3": "NOISE",
+      "reason": "R2 SIGNAL came from a hand-tuned 50/50 wOBA+xwOBA blend; R3 learned blend on 2025 holdout reduces xwOBA's weight and raises prior's weight \u2014 the partial-pooling posterior on Rice's wOBA shrinks back to within prior uncertainty."
+    },
+    {
+      "player": "Mike Trout",
+      "r2": "SIGNAL",
+      "r3": "NOISE",
+      "reason": "R2 SIGNAL was the same hand-tuned blend artifact; R3 learned coefficients put 0.165 on xwOBA, 0.279 on prior, -0.024 on raw wOBA. Trout's prior is .362; even with elite contact quality his ROS posterior delta crosses zero."
+    }
+  ],
+  "_methodology_notes": {
+    "blend_decision": "ADOPT_FULL_BLEND",
+    "blend_features": [
+      "wOBA_window",
+      "xwOBA_window",
+      "EV_p90_window",
+      "HardHit_window",
+      "Barrel_window",
+      "prior_wOBA",
+      "intercept"
+    ],
+    "blend_coef": [
+      -0.02347708248091184,
+      0.16483206834787537,
+      0.0028644757870061564,
+      -0.024978675986894044,
+      0.03852192692157081,
+      0.27878452746880705,
+      -0.10294057840233126
+    ],
+    "blend_holdout_RMSE_baseline": 0.03711563849959219,
+    "blend_holdout_RMSE_full": 0.035876001386368796,
+    "hierarchical_kappa_q50_wOBA": 210.67782592773438,
+    "hierarchical_kappa_q50_xwOBA": 602.292236328125,
+    "stabilization_method": "player_season_bootstrap_direct (R3 fix)",
+    "varland_choice": "FAKE-DOMINANT (obs - post = +.113 cleared the 0.08 gap; excluded from sleeper list per coherence rule. The 3-year weighted prior is the methodologically defensible choice over a late-2025 closer-window prior.)",
+    "reliever_coherence_rule": "Sleeper and fake-dominant lists are mutually exclusive: any reliever flagged as fake-dominant (obs >= 0.30 AND obs-post >= 0.08) is removed from sleeper consideration."
+  }
+}

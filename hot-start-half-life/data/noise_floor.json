@@ -1,0 +1,188 @@
+{
+  "criterion": "wOBA_ros >= 0.85 * wOBA_22g",
+  "n_player_seasons": 20,
+  "fraction_sustained": 0.1,
+  "median_delta": -0.1352714531307203,
+  "rows": [
+    {
+      "season": 2022,
+      "batter": 621493,
+      "PA_22g": 96,
+      "wOBA_22g": 0.4916666666666667,
+      "wOBA_ros": 0.3498929336188437,
+      "delta": -0.14177373304782298,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2022,
+      "batter": 545361,
+      "PA_22g": 94,
+      "wOBA_22g": 0.4790322580645161,
+      "wOBA_ros": 0.4202261306532663,
+      "delta": -0.0588061274112498,
+      "sustained_85pct": true
+    },
+    {
+      "season": 2022,
+      "batter": 543333,
+      "PA_22g": 90,
+      "wOBA_22g": 0.4680232558139535,
+      "wOBA_ros": 0.30648148148148147,
+      "delta": -0.16154177433247202,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2022,
+      "batter": 608070,
+      "PA_22g": 95,
+      "wOBA_22g": 0.4678947368421053,
+      "wOBA_ros": 0.3617750439367311,
+      "delta": -0.10611969290537421,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2022,
+      "batter": 592518,
+      "PA_22g": 95,
+      "wOBA_22g": 0.46755319148936175,
+      "wOBA_ros": 0.3864814814814815,
+      "delta": -0.08107171000788027,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2023,
+      "batter": 667670,
+      "PA_22g": 86,
+      "wOBA_22g": 0.5070588235294118,
+      "wOBA_ros": 0.3270454545454546,
+      "delta": -0.1800133689839572,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2023,
+      "batter": 669016,
+      "PA_22g": 81,
+      "wOBA_22g": 0.4987654320987654,
+      "wOBA_ros": 0.34715762273901807,
+      "delta": -0.15160780935974733,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2023,
+      "batter": 672695,
+      "PA_22g": 75,
+      "wOBA_22g": 0.4845070422535211,
+      "wOBA_ros": 0.3066176470588235,
+      "delta": -0.1778893951946976,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2023,
+      "batter": 656305,
+      "PA_22g": 93,
+      "wOBA_22g": 0.47119565217391307,
+      "wOBA_ros": 0.31773195876288657,
+      "delta": -0.1534636934110265,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2023,
+      "batter": 571970,
+      "PA_22g": 90,
+      "wOBA_22g": 0.4659090909090909,
+      "wOBA_ros": 0.33713991769547325,
+      "delta": -0.12876917321361764,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2024,
+      "batter": 681297,
+      "PA_22g": 69,
+      "wOBA_22g": 0.4681159420289855,
+      "wOBA_ros": 0.3146938775510204,
+      "delta": -0.15342206447796508,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2024,
+      "batter": 606466,
+      "PA_22g": 101,
+      "wOBA_22g": 0.46785714285714286,
+      "wOBA_ros": 0.3914046121593291,
+      "delta": -0.07645253069781377,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2024,
+      "batter": 605141,
+      "PA_22g": 105,
+      "wOBA_22g": 0.46523809523809523,
+      "wOBA_ros": 0.35586797066014675,
+      "delta": -0.10937012457794848,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2024,
+      "batter": 682829,
+      "PA_22g": 88,
+      "wOBA_22g": 0.45795454545454545,
+      "wOBA_ros": 0.34784053156146183,
+      "delta": -0.11011401389308362,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2024,
+      "batter": 641933,
+      "PA_22g": 94,
+      "wOBA_22g": 0.453804347826087,
+      "wOBA_ros": 0.34827127659574464,
+      "delta": -0.10553307123034233,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2025,
+      "batter": 656976,
+      "PA_22g": 70,
+      "wOBA_22g": 0.5364285714285714,
+      "wOBA_ros": 0.2976958525345622,
+      "delta": -0.23873271889400915,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2025,
+      "batter": 593871,
+      "PA_22g": 83,
+      "wOBA_22g": 0.5207317073170732,
+      "wOBA_ros": 0.3232876712328767,
+      "delta": -0.19744403608419647,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2025,
+      "batter": 592450,
+      "PA_22g": 99,
+      "wOBA_22g": 0.5130208333333334,
+      "wOBA_ros": 0.4848901098901099,
+      "delta": -0.028130723443223482,
+      "sustained_85pct": true
+    },
+    {
+      "season": 2025,
+      "batter": 660670,
+      "PA_22g": 95,
+      "wOBA_22g": 0.5080645161290323,
+      "wOBA_ros": 0.37952380952380954,
+      "delta": -0.1285407066052227,
+      "sustained_85pct": false
+    },
+    {
+      "season": 2025,
+      "batter": 608348,
+      "PA_22g": 85,
+      "wOBA_22g": 0.5011764705882353,
+      "wOBA_ros": 0.29774096385542165,
+      "delta": -0.2034355067328137,
+      "sustained_85pct": false
+    }
+  ]
+}

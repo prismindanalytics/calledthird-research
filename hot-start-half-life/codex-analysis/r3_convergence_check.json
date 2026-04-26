@@ -1,0 +1,54 @@
+{
+  "killed_picks_from_r2": [
+    "Tristan Peters (zero-prior hitter sleeper removed by preseason_prior_woba > 0 filter)",
+    "Cole Wilcox (low-prior reliever dropped by R3 prior K% floor)",
+    "Louis Varland (excluded from R3 sleeper-reliever list; remains fake-dominant)"
+  ],
+  "named_starter_verdicts": {
+    "andy_pages": {
+      "confidence": "high",
+      "evidence": "April wOBA 0.395, prior 0.331, projected ROS 0.328 with raw 80% delta band [-0.053, +0.039].",
+      "verdict": "NOISE"
+    },
+    "ben_rice": {
+      "confidence": "medium",
+      "evidence": "April wOBA 0.521, prior 0.326, projected ROS 0.345 with raw 80% delta band [-0.046, +0.065].",
+      "verdict": "NOISE"
+    },
+    "mason_miller": {
+      "confidence": "medium",
+      "evidence": "April K% 65.9%, prior 39.1%, projected ROS 33.3% with raw 80% K% band [23.1%, 43.5%].",
+      "verdict": "AMBIGUOUS"
+    },
+    "mike_trout": {
+      "confidence": "medium",
+      "evidence": "April wOBA 0.423, prior 0.367, projected ROS 0.375 with raw 80% delta band [-0.054, +0.057].",
+      "verdict": "NOISE"
+    },
+    "munetaka_murakami": {
+      "confidence": "low",
+      "evidence": "April wOBA 0.418, prior 0.291, projected ROS 0.350 with raw 80% delta band [-0.028, +0.106].",
+      "verdict": "AMBIGUOUS"
+    }
+  },
+  "top10_sleeper_hitters": [
+    "Everson Pereira",
+    "Jorge Barrosa",
+    "Samuel Basallo",
+    "Jac Caglianone",
+    "Dillon Dingler",
+    "Coby Mayo",
+    "Kyle Karros",
+    "Leody Taveras",
+    "Brady House",
+    "Ildemaro Vargas"
+  ],
+  "top5_sleeper_relievers": [
+    "Antonio Senzatela",
+    "Blade Tidwell",
+    "Daniel Lynch",
+    "John King",
+    "Caleb Kilian"
+  ],
+  "verdicts_changed_from_r2": []
+}

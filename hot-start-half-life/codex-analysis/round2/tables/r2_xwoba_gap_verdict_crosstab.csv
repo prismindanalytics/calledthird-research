@@ -1,0 +1,17 @@
+gap_bucket,verdict,n
+Q1,fake_cold,3
+Q1,fake_hot,1
+Q1,middle,63
+Q1,sleeper,6
+Q2,fake_cold,2
+Q2,fake_hot,3
+Q2,middle,62
+Q2,sleeper,5
+Q3,fake_cold,1
+Q3,fake_hot,5
+Q3,middle,59
+Q3,sleeper,7
+Q4,fake_cold,3
+Q4,fake_hot,1
+Q4,middle,62
+Q4,sleeper,6

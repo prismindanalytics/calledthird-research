@@ -1,0 +1,72 @@
+{
+  "BB%": {
+    "point_pa": 117.73037331342715,
+    "ci_lo_pa": 96.21811603487558,
+    "ci_hi_pa": 147.3582323550519,
+    "ci_method": "player_season_bootstrap_direct",
+    "carleton_ref_pa": 120,
+    "ratio_to_carleton": 0.9810864442785596,
+    "verdict": "consistent_with_carleton",
+    "n_draws_finite": 150,
+    "n_draws_total": 150,
+    "n_player_seasons_pool": 1433,
+    "M_grid_max": 900,
+    "n_boot": 150
+  },
+  "K%": {
+    "point_pa": 54.43153964492133,
+    "ci_lo_pa": 50.0,
+    "ci_hi_pa": 64.87916720896705,
+    "ci_method": "player_season_bootstrap_direct",
+    "carleton_ref_pa": 60,
+    "ratio_to_carleton": 0.9071923274153555,
+    "verdict": "consistent_with_carleton",
+    "n_draws_finite": 150,
+    "n_draws_total": 150,
+    "n_player_seasons_pool": 1433,
+    "M_grid_max": 900,
+    "n_boot": 150
+  },
+  "ISO": {
+    "point_pa": 199.0812739394296,
+    "ci_lo_pa": 162.35784626371498,
+    "ci_hi_pa": 227.7445775125307,
+    "ci_method": "player_season_bootstrap_direct",
+    "carleton_ref_pa": 160,
+    "ratio_to_carleton": 1.244257962121435,
+    "verdict": "shifted",
+    "n_draws_finite": 150,
+    "n_draws_total": 150,
+    "n_player_seasons_pool": 1433,
+    "M_grid_max": 900,
+    "n_boot": 150
+  },
+  "BABIP": {
+    "point_pa": 629.3379157684658,
+    "ci_lo_pa": 579.8618953188657,
+    "ci_hi_pa": 6400.0,
+    "ci_method": "player_season_bootstrap_direct",
+    "carleton_ref_pa": 820,
+    "ratio_to_carleton": 0.7674852631322754,
+    "verdict": "consistent_with_carleton",
+    "n_draws_finite": 138,
+    "n_draws_total": 150,
+    "n_player_seasons_pool": 1433,
+    "M_grid_max": 1600,
+    "n_boot": 150
+  },
+  "wOBA": {
+    "point_pa": 451.2497693276181,
+    "ci_lo_pa": 334.63478711262036,
+    "ci_hi_pa": 637.8816076031037,
+    "ci_method": "player_season_bootstrap_direct",
+    "carleton_ref_pa": 280,
+    "ratio_to_carleton": 1.6116063190272074,
+    "verdict": "shifted",
+    "n_draws_finite": 148,
+    "n_draws_total": 150,
+    "n_player_seasons_pool": 1433,
+    "M_grid_max": 900,
+    "n_boot": 150
+  }
+}

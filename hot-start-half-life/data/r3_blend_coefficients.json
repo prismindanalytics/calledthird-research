@@ -1,0 +1,27 @@
+{
+  "decision": "ADOPT_FULL_BLEND",
+  "gain_threshold_wOBA_pts": 0.0002,
+  "rmse_gain_observed_wOBA_pts": 0.0012396371132233977,
+  "production_blend": {
+    "features": [
+      "wOBA_window",
+      "xwOBA_window",
+      "EV_p90_window",
+      "HardHit_window",
+      "Barrel_window",
+      "prior_wOBA",
+      "intercept"
+    ],
+    "coef": [
+      -0.02347708248091184,
+      0.16483206834787537,
+      0.0028644757870061564,
+      -0.024978675986894044,
+      0.03852192692157081,
+      0.27878452746880705,
+      -0.10294057840233126
+    ],
+    "rmse_train": 0.036955029656917486
+  },
+  "decision_rationale": "On 2025 holdout (n=340), full-blend RMSE = 0.0359 vs wOBA-only baseline RMSE = 0.0371. Gain = +1.2 wOBA-points. Threshold met -> ADOPT full blend; ROS estimator uses learned wOBA + xwOBA + EV_p90 + HardHit + Barrel + prior coefficients."
+}

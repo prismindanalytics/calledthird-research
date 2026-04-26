@@ -1,0 +1,218 @@
+{
+  "as_of_date": "2026-04-25",
+  "players": [
+    {
+      "mlbam": 608032,
+      "name": "Carlos Est\u00e9vez",
+      "rank": 1,
+      "saves": 42,
+      "team": "Kansas City Royals"
+    },
+    {
+      "mlbam": 663158,
+      "name": "Robert Suarez",
+      "rank": 2,
+      "saves": 40,
+      "team": "San Diego Padres"
+    },
+    {
+      "mlbam": 662253,
+      "name": "Andr\u00e9s Mu\u00f1oz",
+      "rank": 3,
+      "saves": 38,
+      "team": "Seattle Mariners"
+    },
+    {
+      "mlbam": 656546,
+      "name": "Jeff Hoffman",
+      "rank": 4,
+      "saves": 33,
+      "team": "Toronto Blue Jays"
+    },
+    {
+      "mlbam": 547973,
+      "name": "Aroldis Chapman",
+      "rank": 5,
+      "saves": 32,
+      "team": "Boston Red Sox"
+    },
+    {
+      "mlbam": 661395,
+      "name": "Jhoan Duran",
+      "rank": 5,
+      "saves": 32,
+      "team": "Philadelphia Phillies"
+    },
+    {
+      "mlbam": 641941,
+      "name": "Emilio Pag\u00e1n",
+      "rank": 5,
+      "saves": 32,
+      "team": "Cincinnati Reds"
+    },
+    {
+      "mlbam": 656730,
+      "name": "Trevor Megill",
+      "rank": 8,
+      "saves": 30,
+      "team": "Milwaukee Brewers"
+    },
+    {
+      "mlbam": 628452,
+      "name": "Raisel Iglesias",
+      "rank": 9,
+      "saves": 29,
+      "team": "Atlanta Braves"
+    },
+    {
+      "mlbam": 445276,
+      "name": "Kenley Jansen",
+      "rank": 9,
+      "saves": 29,
+      "team": "Los Angeles Angels"
+    },
+    {
+      "mlbam": 621242,
+      "name": "Edwin D\u00edaz",
+      "rank": 11,
+      "saves": 28,
+      "team": "New York Mets"
+    },
+    {
+      "mlbam": 623352,
+      "name": "Josh Hader",
+      "rank": 11,
+      "saves": 28,
+      "team": "Houston Astros"
+    },
+    {
+      "mlbam": 670280,
+      "name": "David Bednar",
+      "rank": 13,
+      "saves": 27,
+      "team": "New York Yankees"
+    },
+    {
+      "mlbam": 664126,
+      "name": "Pete Fairbanks",
+      "rank": 13,
+      "saves": 27,
+      "team": "Tampa Bay Rays"
+    },
+    {
+      "mlbam": 661403,
+      "name": "Emmanuel Clase",
+      "rank": 15,
+      "saves": 24,
+      "team": "Cleveland Guardians"
+    },
+    {
+      "mlbam": 640448,
+      "name": "Kyle Finnegan",
+      "rank": 15,
+      "saves": 24,
+      "team": "Detroit Tigers"
+    },
+    {
+      "mlbam": 656945,
+      "name": "Tanner Scott",
+      "rank": 17,
+      "saves": 23,
+      "team": "Los Angeles Dodgers"
+    },
+    {
+      "mlbam": 676684,
+      "name": "Will Vest",
+      "rank": 17,
+      "saves": 23,
+      "team": "Detroit Tigers"
+    },
+    {
+      "mlbam": 695243,
+      "name": "Mason Miller",
+      "rank": 19,
+      "saves": 22,
+      "team": "San Diego Padres"
+    },
+    {
+      "mlbam": 694037,
+      "name": "Daniel Palencia",
+      "rank": 19,
+      "saves": 22,
+      "team": "Chicago Cubs"
+    },
+    {
+      "mlbam": 664854,
+      "name": "Ryan Helsley",
+      "rank": 21,
+      "saves": 21,
+      "team": "New York Mets"
+    },
+    {
+      "mlbam": 642585,
+      "name": "F\u00e9lix Bautista",
+      "rank": 22,
+      "saves": 19,
+      "team": "Baltimore Orioles"
+    },
+    {
+      "mlbam": 642207,
+      "name": "Devin Williams",
+      "rank": 23,
+      "saves": 18,
+      "team": "New York Yankees"
+    },
+    {
+      "mlbam": 676254,
+      "name": "Ryan Walker",
+      "rank": 24,
+      "saves": 17,
+      "team": "San Francisco Giants"
+    },
+    {
+      "mlbam": 666808,
+      "name": "Camilo Doval",
+      "rank": 25,
+      "saves": 16,
+      "team": "New York Yankees"
+    },
+    {
+      "mlbam": 642701,
+      "name": "Dennis Santana",
+      "rank": 25,
+      "saves": 16,
+      "team": "Pittsburgh Pirates"
+    },
+    {
+      "mlbam": 671922,
+      "name": "Cade Smith",
+      "rank": 25,
+      "saves": 16,
+      "team": "Cleveland Guardians"
+    },
+    {
+      "mlbam": 676534,
+      "name": "Calvin Faucher",
+      "rank": 28,
+      "saves": 15,
+      "team": "Miami Marlins"
+    },
+    {
+      "mlbam": 678606,
+      "name": "Jose A. Ferrer",
+      "rank": 29,
+      "saves": 11,
+      "team": "Washington Nationals"
+    },
+    {
+      "mlbam": 678020,
+      "name": "Seth Halvorsen",
+      "rank": 29,
+      "saves": 11,
+      "team": "Colorado Rockies"
+    }
+  ],
+  "selection_rule": "Top 30 2025 saves leaders excluded from sleeper-reliever list as known closers.",
+  "source_name": "MLB Stats API 2025 saves leaders",
+  "source_url": "https://statsapi.mlb.com/api/v1/stats/leaders?leaderCategories=saves&season=2025&statGroup=pitching&limit=30"
+}

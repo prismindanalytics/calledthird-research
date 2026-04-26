@@ -1,0 +1,6 @@
+name_last,name_first,key_mlbam,key_retro,key_bbref,key_fangraphs,mlb_played_first,mlb_played_last,requested_name,lookup_status,stats_api_full_name,stats_api_url
+pages,andy,681624,pagea001,pagesan01,-1.0,2024.0,2025.0,Andy Pages,pybaseball_ok,,
+rice,ben,700250,riceb001,ricebe01,-1.0,2024.0,2025.0,Ben Rice,pybaseball_ok,,
+,,808959,,,,,,Munetaka Murakami,stats_api_ok,Munetaka Murakami,https://statsapi.mlb.com/api/v1/people/search?names=Munetaka%20Murakami
+trout,mike,545361,troum001,troutmi01,10155.0,2011.0,2025.0,Mike Trout,pybaseball_ok,,
+miller,mason,695243,millm004,millema03,31757.0,2023.0,2025.0,Mason Miller,pybaseball_ok,,

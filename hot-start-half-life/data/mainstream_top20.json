@@ -1,0 +1,188 @@
+{
+  "as_of_date": "2026-04-25",
+  "players": [
+    {
+      "metric": "OPS",
+      "mlbam": 670541,
+      "name": "Yordan Alvarez",
+      "normalized_name": "yordanalvarez",
+      "rank": 1,
+      "team": "HOU",
+      "value": 1.247
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 700250,
+      "name": "Ben Rice",
+      "normalized_name": "benrice",
+      "rank": 2,
+      "team": "NYY",
+      "value": 1.197
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 808959,
+      "name": "Munetaka Murakami",
+      "normalized_name": "munetakamurakami",
+      "rank": 3,
+      "team": "CHW",
+      "value": 1.02
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 695578,
+      "name": "James Wood",
+      "normalized_name": "jameswood",
+      "rank": 4,
+      "team": "WSH",
+      "value": 1.005
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 682998,
+      "name": "Corbin Carroll",
+      "normalized_name": "corbincarroll",
+      "rank": 5,
+      "team": "ARI",
+      "value": 0.976
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 571970,
+      "name": "Max Muncy",
+      "normalized_name": "maxmuncy",
+      "rank": 6,
+      "team": "LAD",
+      "value": 0.972
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 701398,
+      "name": "Sal Stewart",
+      "normalized_name": "salstewart",
+      "rank": 7,
+      "team": "CIN",
+      "value": 0.97
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 545361,
+      "name": "Mike Trout",
+      "normalized_name": "miketrout",
+      "rank": 8,
+      "team": "LAA",
+      "value": 0.969
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 671739,
+      "name": "Michael Harris II",
+      "normalized_name": "michaelharrisii",
+      "rank": 9,
+      "team": "ATL",
+      "value": 0.944
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 621566,
+      "name": "Matt Olson",
+      "normalized_name": "mattolson",
+      "rank": 9,
+      "team": "ATL",
+      "value": 0.944
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 656811,
+      "name": "Ryan O'Hearn",
+      "normalized_name": "ryanohearn",
+      "rank": 9,
+      "team": "PIT",
+      "value": 0.944
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 682928,
+      "name": "CJ Abrams",
+      "normalized_name": "cjabrams",
+      "rank": 12,
+      "team": "WSH",
+      "value": 0.936
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 592450,
+      "name": "Aaron Judge",
+      "normalized_name": "aaronjudge",
+      "rank": 13,
+      "team": "NYY",
+      "value": 0.931
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 681624,
+      "name": "Andy Pages",
+      "normalized_name": "andypages",
+      "rank": 13,
+      "team": "LAD",
+      "value": 0.931
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 669127,
+      "name": "Shea Langeliers",
+      "normalized_name": "shealangeliers",
+      "rank": 15,
+      "team": "ATH",
+      "value": 0.926
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 691023,
+      "name": "Jordan Walker",
+      "normalized_name": "jordanwalker",
+      "rank": 16,
+      "team": "STL",
+      "value": 0.924
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 695600,
+      "name": "Carter Jensen",
+      "normalized_name": "carterjensen",
+      "rank": 17,
+      "team": "KC",
+      "value": 0.923
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 805808,
+      "name": "Kevin McGonigle",
+      "normalized_name": "kevinmcgonigle",
+      "rank": 19,
+      "team": "DET",
+      "value": 0.911
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 669364,
+      "name": "Xavier Edwards",
+      "normalized_name": "xavieredwards",
+      "rank": 20,
+      "team": "MIA",
+      "value": 0.908
+    },
+    {
+      "metric": "OPS",
+      "mlbam": 686948,
+      "name": "Drake Baldwin",
+      "normalized_name": "drakebaldwin",
+      "rank": 21,
+      "team": "ATL",
+      "value": 0.903
+    }
+  ],
+  "selection_rule": "Top 20 rows on ESPN batting OPS leaderboard captured for Round 2. This is the mainstream-coverage proxy required for sleeper classification.",
+  "source_name": "ESPN MLB player batting stat leaders",
+  "source_url": "https://www.espn.com/mlb/stats/player/_/season/2026/table/batting/sort/OPS/dir/desc"
+}

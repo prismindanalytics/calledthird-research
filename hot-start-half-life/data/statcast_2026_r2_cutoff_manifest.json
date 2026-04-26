@@ -1,0 +1,7 @@
+{
+  "actual_max_game_date": "2026-04-24",
+  "apr25_rows_available": false,
+  "prior_reason_if_rebuilt": "missing-columns:pitch_number,pitch_type,plate_x,plate_z",
+  "requested_cutoff": "2026-04-25",
+  "rows": 113461
+}

@@ -1,0 +1,62 @@
+{
+  "BB%": {
+    "point_pa": 121.51741235360882,
+    "ci_lo_pa": 97.5117739974777,
+    "ci_hi_pa": 138.8376439521533,
+    "carleton_ref_pa": 120,
+    "ratio_to_carleton": 1.0126451029467403,
+    "verdict": "consistent_with_carleton",
+    "n_draws_finite": 200,
+    "n_draws_total": 200,
+    "n_player_seasons": 1452,
+    "M_grid_max": 900
+  },
+  "K%": {
+    "point_pa": 53.68502031843108,
+    "ci_lo_pa": 50.0,
+    "ci_hi_pa": 66.75138164436932,
+    "carleton_ref_pa": 60,
+    "ratio_to_carleton": 0.894750338640518,
+    "verdict": "consistent_with_carleton",
+    "n_draws_finite": 200,
+    "n_draws_total": 200,
+    "n_player_seasons": 1452,
+    "M_grid_max": 900
+  },
+  "ISO": {
+    "point_pa": 198.20714134163714,
+    "ci_lo_pa": 176.20307710227806,
+    "ci_hi_pa": 238.2523549346809,
+    "carleton_ref_pa": 160,
+    "ratio_to_carleton": 1.2387946333852322,
+    "verdict": "shifted",
+    "n_draws_finite": 200,
+    "n_draws_total": 200,
+    "n_player_seasons": 1452,
+    "M_grid_max": 900
+  },
+  "BABIP": {
+    "point_pa": 626.8253970244202,
+    "ci_lo_pa": 582.822679902937,
+    "ci_hi_pa": 747.0087626228078,
+    "carleton_ref_pa": 820,
+    "ratio_to_carleton": 0.7644212158834393,
+    "verdict": "shifted",
+    "n_draws_finite": 199,
+    "n_draws_total": 200,
+    "n_player_seasons": 1452,
+    "M_grid_max": 1600
+  },
+  "wOBA": {
+    "point_pa": 489.070500547242,
+    "ci_lo_pa": 395.67322788087716,
+    "ci_hi_pa": 569.4852273438645,
+    "carleton_ref_pa": 280,
+    "ratio_to_carleton": 1.7466803590972928,
+    "verdict": "shifted",
+    "n_draws_finite": 200,
+    "n_draws_total": 200,
+    "n_player_seasons": 1452,
+    "M_grid_max": 900
+  }
+}

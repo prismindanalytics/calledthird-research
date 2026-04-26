@@ -1,0 +1,24 @@
+{
+  "Andy Pages": {
+    "mlbam": 681624,
+    "source": "pybaseball"
+  },
+  "Ben Rice": {
+    "mlbam": 700250,
+    "source": "pybaseball"
+  },
+  "Mason Miller": {
+    "mlbam": 695243,
+    "source": "pybaseball"
+  },
+  "Mike Trout": {
+    "mlbam": 545361,
+    "source": "pybaseball"
+  },
+  "Munetaka Murakami": {
+    "fullName": "Munetaka Murakami",
+    "mlbam": 808959,
+    "primaryPosition": "3B",
+    "source": "mlb_stats_api"
+  }
+}

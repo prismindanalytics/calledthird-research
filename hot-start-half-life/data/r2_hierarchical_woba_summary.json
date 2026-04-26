@@ -1,0 +1,10 @@
+{
+  "kappa_post_q10": 146.35391235351562,
+  "kappa_post_q50": 207.45639038085938,
+  "kappa_post_q90": 311.9952087402344,
+  "kappa_rhat": 1.0090713327634981,
+  "kappa_ess": 1246.81664807942,
+  "n_players": 279,
+  "n_chains": 4,
+  "n_samples_per_chain": 3000
+}

@@ -1,0 +1,262 @@
+{
+  "andy_pages": {
+    "mlbam": 681624,
+    "role": "hitter",
+    "n_career_pa": 1153,
+    "n_2026_pa": 94,
+    "first_2026_idx": 1059,
+    "changepoints": {
+      "n": 1153,
+      "results": {
+        "c=0.5": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1153,
+              "mean": 0.33612315698178663,
+              "n": 1153
+            }
+          ],
+          "deltas": []
+        },
+        "c=1.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1153,
+              "mean": 0.33612315698178663,
+              "n": 1153
+            }
+          ],
+          "deltas": []
+        },
+        "c=2.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1153,
+              "mean": 0.33612315698178663,
+              "n": 1153
+            }
+          ],
+          "deltas": []
+        }
+      }
+    },
+    "verdict": "no_break_in_2026"
+  },
+  "ben_rice": {
+    "mlbam": 700250,
+    "role": "hitter",
+    "n_career_pa": 798,
+    "n_2026_pa": 90,
+    "first_2026_idx": 708,
+    "changepoints": {
+      "n": 798,
+      "results": {
+        "c=0.5": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 798,
+              "mean": 0.3582706766917293,
+              "n": 798
+            }
+          ],
+          "deltas": []
+        },
+        "c=1.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 798,
+              "mean": 0.3582706766917293,
+              "n": 798
+            }
+          ],
+          "deltas": []
+        },
+        "c=2.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 798,
+              "mean": 0.3582706766917293,
+              "n": 798
+            }
+          ],
+          "deltas": []
+        }
+      }
+    },
+    "verdict": "no_break_in_2026"
+  },
+  "mike_trout": {
+    "mlbam": 545361,
+    "role": "hitter",
+    "n_career_pa": 1154,
+    "n_2026_pa": 110,
+    "first_2026_idx": 1044,
+    "changepoints": {
+      "n": 1154,
+      "results": {
+        "c=0.5": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1154,
+              "mean": 0.36451473136915075,
+              "n": 1154
+            }
+          ],
+          "deltas": []
+        },
+        "c=1.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1154,
+              "mean": 0.36451473136915075,
+              "n": 1154
+            }
+          ],
+          "deltas": []
+        },
+        "c=2.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 1154,
+              "mean": 0.36451473136915075,
+              "n": 1154
+            }
+          ],
+          "deltas": []
+        }
+      }
+    },
+    "verdict": "no_break_in_2026"
+  },
+  "mason_miller": {
+    "mlbam": 695243,
+    "role": "reliever",
+    "n_career_pa": 663,
+    "n_2026_pa": 41,
+    "first_2026_idx": 622,
+    "changepoints": {
+      "n": 663,
+      "results": {
+        "c=0.5": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 663,
+              "mean": 0.23031674208144795,
+              "n": 663
+            }
+          ],
+          "deltas": []
+        },
+        "c=1.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 663,
+              "mean": 0.23031674208144795,
+              "n": 663
+            }
+          ],
+          "deltas": []
+        },
+        "c=2.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 663,
+              "mean": 0.23031674208144795,
+              "n": 663
+            }
+          ],
+          "deltas": []
+        }
+      }
+    },
+    "verdict": "no_break_in_2026"
+  },
+  "munetaka_murakami": {
+    "mlbam": 808959,
+    "role": "hitter",
+    "n_career_pa": 105,
+    "n_2026_pa": 105,
+    "first_2026_idx": 0,
+    "changepoints": {
+      "n": 105,
+      "results": {
+        "c=0.5": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 105,
+              "mean": 0.39523809523809533,
+              "n": 105
+            }
+          ],
+          "deltas": []
+        },
+        "c=1.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 105,
+              "mean": 0.39523809523809533,
+              "n": 105
+            }
+          ],
+          "deltas": []
+        },
+        "c=2.0": {
+          "breaks": [],
+          "n_segments": 1,
+          "segments": [
+            {
+              "start": 0,
+              "end": 105,
+              "mean": 0.39523809523809533,
+              "n": 105
+            }
+          ],
+          "deltas": []
+        }
+      }
+    },
+    "verdict": "no_break_in_2026"
+  }
+}
