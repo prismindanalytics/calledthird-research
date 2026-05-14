@@ -9,7 +9,7 @@ REPORT.md and READY_FOR_REVIEW.md are kept hand-edited but the JSON below is the
 authoritative numerical summary they cite.
 
 Usage:
-    cd <PROJECT_ROOT>/claude-analysis
+    cd /Users/haohu/Documents/GitHub/calledthird/research/abs-walk-spike/claude-analysis
     python3 analyze.py
 """
 from __future__ import annotations

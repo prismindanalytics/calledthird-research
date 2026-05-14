@@ -1,0 +1,103 @@
+{
+  "h1_overturn_rate_by_spot": [
+    {
+      "spot": 1,
+      "rate": 0.5482758620689655,
+      "ci_low": 0.49301724137931036,
+      "ci_high": 0.6069827586206896,
+      "n": 290
+    },
+    {
+      "spot": 2,
+      "rate": 0.55,
+      "ci_low": 0.48846153846153845,
+      "ci_high": 0.6153846153846154,
+      "n": 260
+    },
+    {
+      "spot": 3,
+      "rate": 0.525096525096525,
+      "ci_low": 0.46332046332046334,
+      "ci_high": 0.583108108108108,
+      "n": 259
+    },
+    {
+      "spot": 4,
+      "rate": 0.5353982300884956,
+      "ci_low": 0.46891592920353986,
+      "ci_high": 0.6017699115044248,
+      "n": 226
+    },
+    {
+      "spot": 5,
+      "rate": 0.5263157894736842,
+      "ci_low": 0.4605263157894737,
+      "ci_high": 0.5922149122807016,
+      "n": 228
+    },
+    {
+      "spot": 6,
+      "rate": 0.5565610859728507,
+      "ci_low": 0.49321266968325794,
+      "ci_high": 0.6199095022624435,
+      "n": 221
+    },
+    {
+      "spot": 7,
+      "rate": 0.5117370892018779,
+      "ci_low": 0.43661971830985913,
+      "ci_high": 0.5774647887323944,
+      "n": 213
+    },
+    {
+      "spot": 8,
+      "rate": 0.5077720207253886,
+      "ci_low": 0.43523316062176165,
+      "ci_high": 0.5804404145077718,
+      "n": 193
+    },
+    {
+      "spot": 9,
+      "rate": 0.4834123222748815,
+      "ci_low": 0.41232227488151657,
+      "ci_high": 0.5545023696682464,
+      "n": 211
+    }
+  ],
+  "h2_lineup_shap_effect": {
+    "spot_7_mean_shap": 0.0,
+    "spot_3_mean_shap": -0.004042135611589131,
+    "delta": 0.004042135611589131
+  },
+  "h2_counterfactual_effect_pp": {
+    "spot_7_vs_3": 0.14747202965692932,
+    "ci_low": 0.07924686459630702,
+    "ci_high": 0.22759148927904505,
+    "n_bootstrap": 200
+  },
+  "h3_called_strike_counterfactual_pp": {
+    "effect_pp": -0.34853946283829856,
+    "ci_low": -0.39499277079824224,
+    "ci_high": -0.3110588032492436,
+    "n_borderline_pitches": 2767,
+    "n_bootstrap": 200
+  },
+  "selection_effect_signal": {
+    "energy_distance": 0.010232126492782712,
+    "permutation_p": 0.11976047904191617,
+    "null_mean": -1.4116638070765575e-05,
+    "null_p95": 0.01681453475918797,
+    "n_spot_7": 213,
+    "n_spot_3": 259,
+    "n_permutations": 500,
+    "interpretation": "no decisive multivariate selection shift between spot 7 and spot 3 challenges"
+  },
+  "model_metrics": {
+    "challenge_auc": 0.5786905086905086,
+    "called_pitch_auc": 0.9893559226827937,
+    "challenge_logloss": 0.6822016122655238,
+    "called_pitch_logloss": 0.1239665351758117
+  },
+  "recommended_branch": "B4",
+  "biggest_concern": "The challenge model has only a few hundred rows per lineup region, so the H2 counterfactual is less stable than the called-pitch H3 model; treat it as a controlled diagnostic, not a standalone causal estimate."
+}

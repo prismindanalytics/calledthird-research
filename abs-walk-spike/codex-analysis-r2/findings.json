@@ -1,0 +1,378 @@
+{
+  "h1_walk_rate": {
+    "rate_2025": 0.08803120420653392,
+    "rate_2026": 0.09462089616083841,
+    "yoy_delta_pp": 0.6589691954304491,
+    "ci_low": 0.2741566717642166,
+    "ci_high": 1.0406898120934398,
+    "n_2026": 46755,
+    "classifier_auc": 0.9938442749718587,
+    "max_calibration_deviation": 0.002771808910077292
+  },
+  "h2_per_count": [
+    {
+      "count": "0-0",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0005157987436201259,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.005758677022130376,
+      "ci_low": -0.005769141714261351,
+      "ci_high": -0.005748212329999401
+    },
+    {
+      "count": "1-0",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0008687822892466914,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.005345923743263247,
+      "ci_low": -0.005359868624344606,
+      "ci_high": -0.005331978862181888
+    },
+    {
+      "count": "0-1",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0002511596313829358,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.002214265855118086,
+      "ci_low": -0.0022201301508907346,
+      "ci_high": -0.0022084015593454367
+    },
+    {
+      "count": "2-0",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0007984970779051619,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.0016651366719228594,
+      "ci_low": -0.0016762499416683122,
+      "ci_high": -0.0016540234021774065
+    },
+    {
+      "count": "1-1",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0004399123552900461,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.0033787301205145024,
+      "ci_low": -0.003393602168276705,
+      "ci_high": -0.0033638580727523
+    },
+    {
+      "count": "0-2",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0046259574837671765,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": 0.0,
+      "zone_contribution_pp": -0.043236946217650646,
+      "ci_low": -0.04363580590704495,
+      "ci_high": -0.042838086528256325
+    },
+    {
+      "count": "3-0",
+      "delta_pp": -0.6163097403973361,
+      "counterfactual_walk_rate": 0.7565743904894899,
+      "contribution_to_aggregate_pp": 0.3276620888030378,
+      "rate_effect_pp": -0.013168504559019117,
+      "flow_effect_pp": 0.34083059336205695,
+      "zone_contribution_pp": 0.36398713271521654,
+      "ci_low": 0.36215850206894273,
+      "ci_high": 0.36581576336149035
+    },
+    {
+      "count": "2-1",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.0009057052700882225,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": 0.0,
+      "zone_contribution_pp": -0.004242315349145989,
+      "ci_low": -0.004277919564264376,
+      "ci_high": -0.004206711134027602
+    },
+    {
+      "count": "1-2",
+      "delta_pp": 0.0,
+      "counterfactual_walk_rate": 0.008999085688649457,
+      "contribution_to_aggregate_pp": 0.0,
+      "rate_effect_pp": 0.0,
+      "flow_effect_pp": 0.0,
+      "zone_contribution_pp": -0.13592459230722376,
+      "ci_low": -0.13684854255504503,
+      "ci_high": -0.1350006420594025
+    },
+    {
+      "count": "3-1",
+      "delta_pp": 2.1982121947299538,
+      "counterfactual_walk_rate": 0.49123292904008603,
+      "contribution_to_aggregate_pp": 0.25325054534228775,
+      "rate_effect_pp": 0.09948491079132889,
+      "flow_effect_pp": 0.15376563455095885,
+      "zone_contribution_pp": 0.4781330812772491,
+      "ci_low": 0.47624613648434316,
+      "ci_high": 0.480020026070155
+    },
+    {
+      "count": "2-2",
+      "delta_pp": 0.015358623867301491,
+      "counterfactual_walk_rate": 0.019820146724213325,
+      "contribution_to_aggregate_pp": 0.0021388086835632558,
+      "rate_effect_pp": 0.0021388086835632558,
+      "flow_effect_pp": -0.0,
+      "zone_contribution_pp": -0.27387226033868667,
+      "ci_low": -0.2758405906013583,
+      "ci_high": -0.27190393007601504
+    },
+    {
+      "count": "3-2",
+      "delta_pp": 0.35785696811985734,
+      "counterfactual_walk_rate": 0.341670992308242,
+      "contribution_to_aggregate_pp": 0.07591775260156101,
+      "rate_effect_pp": 0.051449353859516225,
+      "flow_effect_pp": 0.024468398742044786,
+      "zone_contribution_pp": -0.13412984770827205,
+      "ci_low": -0.13718660039702682,
+      "ci_high": -0.13107309501951722
+    }
+  ],
+  "h3_zone_attribution_pct": {
+    "all_pitches": 35.25984526587193,
+    "ci_low": 34.56566684600394,
+    "ci_high": 35.95402368573992,
+    "counterfactual_walk_rate": 0.09229738097425302,
+    "per_count": {
+      "0-0": {
+        "zone_contribution_pp": 0.012297452921115615,
+        "ci_low_pp": 0.010378744769862523,
+        "ci_high_pp": 0.014216161072368706,
+        "attribution_pct": 1.8661650660442064
+      },
+      "0-1": {
+        "zone_contribution_pp": -0.043761687289129575,
+        "ci_low_pp": -0.044780915345245184,
+        "ci_high_pp": -0.042742459233013966,
+        "attribution_pct": -6.640930652387134
+      },
+      "0-2": {
+        "zone_contribution_pp": -0.038191996786744314,
+        "ci_low_pp": -0.038409454513810476,
+        "ci_high_pp": -0.03797453905967815,
+        "attribution_pct": -5.795718077807369
+      },
+      "1-0": {
+        "zone_contribution_pp": -0.0064435366314555265,
+        "ci_low_pp": -0.00927587167140272,
+        "ci_high_pp": -0.0036112015915083333,
+        "attribution_pct": -0.9778206137915909
+      },
+      "1-1": {
+        "zone_contribution_pp": -0.04788077468453111,
+        "ci_low_pp": -0.04889380063572126,
+        "ci_high_pp": -0.046867748733340965,
+        "attribution_pct": -7.266011069493868
+      },
+      "1-2": {
+        "zone_contribution_pp": -0.03911742435910526,
+        "ci_low_pp": -0.03960738707332911,
+        "ci_high_pp": -0.03862746164488141,
+        "attribution_pct": -5.9361537125499675
+      },
+      "2-0": {
+        "zone_contribution_pp": 0.05029566963871592,
+        "ci_low_pp": 0.04801434776314257,
+        "ci_high_pp": 0.052576991514289274,
+        "attribution_pct": 7.632476599435274
+      },
+      "2-1": {
+        "zone_contribution_pp": -0.015655161677800566,
+        "ci_low_pp": -0.0187082783709878,
+        "ci_high_pp": -0.012602044984613332,
+        "attribution_pct": -2.3757046287382777
+      },
+      "2-2": {
+        "zone_contribution_pp": -0.04663738159859959,
+        "ci_low_pp": -0.048648955206226724,
+        "ci_high_pp": -0.04462580799097246,
+        "attribution_pct": -7.077323480672767
+      },
+      "3-0": {
+        "zone_contribution_pp": -0.013760113423133963,
+        "ci_low_pp": -0.01643457412197811,
+        "ci_high_pp": -0.011085652724289817,
+        "attribution_pct": -2.088126959280037
+      },
+      "3-1": {
+        "zone_contribution_pp": 0.03514780737667658,
+        "ci_low_pp": 0.032917443615288436,
+        "ci_high_pp": 0.03737817113806473,
+        "attribution_pct": 5.3337557537446765
+      },
+      "3-2": {
+        "zone_contribution_pp": 0.06157931971372682,
+        "ci_low_pp": 0.057613146466601664,
+        "ci_high_pp": 0.06554549296085195,
+        "attribution_pct": 9.344794891892061
+      }
+    },
+    "top_edge": {
+      "attribution_pct": 66.18408494131914,
+      "ci_low": 65.4046621831844,
+      "ci_high": 66.96350769945386,
+      "contribution_pp": 0.4361327320408158
+    },
+    "bottom_edge": {
+      "attribution_pct": -56.13729330713826,
+      "ci_low": -56.807766862210606,
+      "ci_high": -55.46681975206591,
+      "contribution_pp": -0.3699274700424804
+    },
+    "round1_benchmark_pct": 40.46
+  },
+  "h4_adaptation": {
+    "league_zone_rate_2025": 0.4282133368904303,
+    "league_zone_rate_2026": 0.42532150191638207,
+    "league_weekly_trend": "up",
+    "top_adapters": [
+      {
+        "pitcher": 682120,
+        "player_name": "Herrin, Tim",
+        "pitches": 242,
+        "js_pitch_mix": 0.2781172299547072,
+        "vertical_shift_ft": 0.5237040340276955,
+        "zone_rate_shift": 0.18498168498168494,
+        "adaptation_magnitude": 6.072567065699188,
+        "early_pitches": 52,
+        "late_pitches": 84
+      },
+      {
+        "pitcher": 676775,
+        "player_name": "Winn, Keaton",
+        "pitches": 241,
+        "js_pitch_mix": 0.30106987222638165,
+        "vertical_shift_ft": 0.5445928421966157,
+        "zone_rate_shift": 0.1637126865671642,
+        "adaptation_magnitude": 5.753694972356129,
+        "early_pitches": 64,
+        "late_pitches": 67
+      },
+      {
+        "pitcher": 693855,
+        "player_name": "Seymour, Ian",
+        "pitches": 307,
+        "js_pitch_mix": 0.3174696294883684,
+        "vertical_shift_ft": 0.5194823908983381,
+        "zone_rate_shift": 0.16100086281276965,
+        "adaptation_magnitude": 5.615416449337114,
+        "early_pitches": 61,
+        "late_pitches": 95
+      },
+      {
+        "pitcher": 621381,
+        "player_name": "Strahm, Matt",
+        "pitches": 266,
+        "js_pitch_mix": 0.11018358896748522,
+        "vertical_shift_ft": 0.45253084940402255,
+        "zone_rate_shift": 0.15196168723521825,
+        "adaptation_magnitude": 4.95954073128794,
+        "early_pitches": 89,
+        "late_pitches": 61
+      },
+      {
+        "pitcher": 607455,
+        "player_name": "Banda, Anthony",
+        "pitches": 337,
+        "js_pitch_mix": 0.11334901439497784,
+        "vertical_shift_ft": -0.30579576630637817,
+        "zone_rate_shift": -0.173265306122449,
+        "adaptation_magnitude": 4.8018382020694705,
+        "early_pitches": 100,
+        "late_pitches": 98
+      },
+      {
+        "pitcher": 663542,
+        "player_name": "Hudson, Bryan",
+        "pitches": 349,
+        "js_pitch_mix": 0.5506815437465375,
+        "vertical_shift_ft": 0.34460454027881204,
+        "zone_rate_shift": 0.14228934817170114,
+        "adaptation_magnitude": 4.774886668295808,
+        "early_pitches": 102,
+        "late_pitches": 74
+      },
+      {
+        "pitcher": 663947,
+        "player_name": "Holton, Tyler",
+        "pitches": 317,
+        "js_pitch_mix": 0.3878151221878865,
+        "vertical_shift_ft": 0.26358776298832054,
+        "zone_rate_shift": 0.16470588235294115,
+        "adaptation_magnitude": 4.736283821199992,
+        "early_pitches": 85,
+        "late_pitches": 85
+      },
+      {
+        "pitcher": 677961,
+        "player_name": "Wilcox, Cole",
+        "pitches": 270,
+        "js_pitch_mix": 0.346118700369146,
+        "vertical_shift_ft": -0.3365186079999485,
+        "zone_rate_shift": -0.15000000000000002,
+        "adaptation_magnitude": 4.69219313236894,
+        "early_pitches": 64,
+        "late_pitches": 40
+      },
+      {
+        "pitcher": 642547,
+        "player_name": "Peralta, Freddy",
+        "pitches": 762,
+        "js_pitch_mix": 0.19780298921627357,
+        "vertical_shift_ft": 0.3822108558727053,
+        "zone_rate_shift": 0.13943520603314974,
+        "adaptation_magnitude": 4.515350533370089,
+        "early_pitches": 193,
+        "late_pitches": 191
+      },
+      {
+        "pitcher": 593974,
+        "player_name": "Peralta, Wandy",
+        "pitches": 324,
+        "js_pitch_mix": 0.22946227263485153,
+        "vertical_shift_ft": 0.09584234224220456,
+        "zone_rate_shift": 0.19289878113407521,
+        "adaptation_magnitude": 4.470807264285174,
+        "early_pitches": 74,
+        "late_pitches": 102
+      }
+    ]
+  },
+  "h5_first_pitch_mechanism": {
+    "heart_zone_0_0_yoy_delta_pp": 0.0009468109117838353,
+    "top_edge_2_strike_yoy_delta_pp": -3.1706399722576,
+    "interaction_credible": true
+  },
+  "recommended_branch": "adaptation",
+  "biggest_concern": "Statcast returned no May 13 pitches at run time; the effective 2026 endpoint is 2026-05-12",
+  "metadata": {
+    "requested_start_2026": "2026-03-27",
+    "requested_end_2026": "2026-05-13",
+    "effective_end_2026": "2026-05-12",
+    "effective_end_2025": "2025-05-12",
+    "statcast_extension_rows": 76086,
+    "statcast_extension_min_date": "2026-04-23",
+    "statcast_extension_max_date": "2026-05-12",
+    "may_13_available": false,
+    "rows_2025": 180502,
+    "rows_2026": 182856,
+    "weekly_rows": 14,
+    "common_columns": 118,
+    "seed": 20260514
+  }
+}

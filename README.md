@@ -6,6 +6,25 @@ This repository contains the data pipelines, analysis scripts, and methodology d
 
 ## Projects
 
+### 📉 [ABS Walk Spike — Three Rounds (mid-May update)](./abs-walk-spike/)
+Three weeks after the original ABS Walk Spike piece. Has the spike held, who's adapting, and what archetype is paying the price?
+
+- **Article:** [Three Weeks Later: The Walk Spike Is Fading, and We Know Who's Paying the Bill](https://calledthird.com/analysis/abs-walk-spike-fading)
+- **Prior positions:** [April 9](https://calledthird.com/analysis/the-walk-rate-spike) ("pitchers, not umpires") → [April 23](https://calledthird.com/analysis/abs-walk-spike-zone-correction) (40-50% zone) → this Round 3 update
+- **Data:** 2025 vs 2026 Statcast (Mar 27 – May 12 matched window), 46,755 PAs, 28,579 borderline pitches; pitcher stuff/command archetype proxies from prior-season Statcast
+- **Approach:** Three rounds of dual-agent (Claude Bayesian via PyMC + Codex ML via LightGBM) with full cross-review at every round. R1 → R2 → R3 progression includes a resolved Statcast schema artifact, a resolved 0-0 first-pitch tension, and a resolved CI artifact from fixed-model bootstrap. R3 mandates game-level bootstrap with refit (200 iterations) and bootstrap-of-bootstrap (100 outer × 10 inner) for triangulation.
+- **Key findings:** (1) Spike narrowed from +0.82pp (R1) to +0.66pp (R3), fading within 2026 (P(regressed)=89%). (2) Zone attribution muted from +40-50% to **~+26% with editorial CI [+0.2%, +70.1%]** across 6 independent counterfactual methods. (3) **0-0 first-pitch mechanism resolved** — top-edge first-pitches lost 6.76pp more strikes than top-edge 2-strike pitches (Bayesian DiD credible). (4) **Stuff−command archetype effect dual-confirmed**: Spearman ρ = −0.282 (Bayes) / −0.258 (ML), p<0.0001 both methods. (5) Three named pitchers cleared bootstrap stability in both pipelines: Kyle Finnegan (command-hurt, +11.4pp), Riley O'Brien (stuff-helped, −8.3pp), Camilo Doval (stuff-helped, −7.5pp). (6) Honest null on within-2026 adapters: 0 of 367 cleared filters.
+
+### ⚖️ [The 7-Hole Tax — Two Rounds](./seven-hole-tax/)
+FanSided and The Ringer reported that umpires call a different strike zone for 7-hole batters. We tested it six different ways. It isn't there.
+
+- **Article:** [We Tested the 7-Hole Tax Six Different Ways. It Isn't There.](https://calledthird.com/analysis/seven-hole-tax)
+- **Triggering reporting:** FanSided's "MLB's ABS challenge data just proved what hitters have known for years" and The Ringer's "Accountability Culture Is Dead. ABS Is the Exception." (both reported 30.2% overturn rate for 7-hole batters as evidence of umpire bias against perceived-weaker hitters)
+- **Data:** 2,101 ABS challenges + 28,579 borderline called pitches through May 4, 2026; lineup spot derived from MLB Stats API boxscore feed
+- **Approach:** Two rounds of dual-agent. R1 tested raw replication, pitch-selection, and borderline-pitch zone analysis. R2 added per-umpire random-slopes (78 qualifying umpires), per-hitter posterior-predictive residuals, catcher-mechanism, and chase-rate interaction tests.
+- **Key finding:** **The bias does not exist at any of six levels we can credibly test.** Raw replication: 37.1% on n=89 (Wilson CI [27.8%, 47.5%]). Borderline-pitch zone: both methods essentially zero (−0.17pp Bayes, −0.35pp ML on n=28,579). Per-umpire: 0 of 78 with credibly biased calling after hierarchical shrinkage. ML method initially flagged 5 reverse-direction umpires — failed cross-method convergence in Bayesian replication.
+- **Methodology note:** A sign-convention slip in one R3 draft labeled the favored direction as "pro-tax"; the cross-review caught it. A "fixed-model bootstrap" artifact in the ML pipeline gave a +0.15pp [+0.08, +0.23] interval that was a precision-of-mean number rather than a credible effect-size interval; the Bayesian [−21.4, +3.5] is the honest uncertainty range. Both errors are disclosed in the published article.
+
 ### 🚦 [The Hot-Start Half-Life — Three Rounds](./hot-start-half-life/)
 Which 2026 April hot starters are real, which are noise, and which sleepers does nobody know about?
 
@@ -14,16 +33,6 @@ Which 2026 April hot starters are real, which are noise, and which sleepers does
 - **Approach:** Three rounds of dual-agent (Claude Bayesian + Codex LightGBM) with full cross-review at each round and an editorial constraint of "ship only when both agree." Universe scan, per-component persistence model, xwOBA-gap analysis, reliever K% true-talent board.
 - **Key finding:** **All six MVP-pace mainstream hot starters (Pages, Rice, Trout, Judge, Carroll, Muncy) collapse to NOISE in both methods.** Six convergent sleeper hitters surface (Caglianone, Pereira, Barrosa, Basallo, Mayo, House) plus four sleeper relievers (Senzatela, Lynch, King, Kilian). Murakami is the only big-name signal, with explicit method-disagreement disclosure due to the missing NPB-translation prior.
 - **Methodology note:** Two named retractions during the three rounds — R1's "three of five stabilization rates shifted vs Carleton" died when the bootstrap was redone at the player-season level; R2's "Rice/Trout SIGNAL via contact-quality features" died when a hand-tuned 50/50 wOBA+xwOBA blend was replaced with a learned-coefficient blend that validated on holdout. Both retractions are in the published article.
-
-### 📍 [ABS Walk Spike — Round 1](./abs-walk-spike/)
-Did the new 2026 ABS-defined zone cause the walk-rate spike? How much of it?
-
-- **Article:** [ABS Took the High Strike — and That's Roughly 40-50% of the Walk Spike. Pitchers Own the Rest.](https://calledthird.com/analysis/abs-walk-spike-zone-correction)
-- **Prior position (now updated):** [The Walk Rate Spike: Umpires or Pitchers?](https://calledthird.com/analysis/the-walk-rate-spike) — said "pitchers, not umpires"; this Round 1 piece is the honest update.
-- **Data:** 2025 vs 2026 Statcast pitch-by-pitch (Mar 27 – Apr 22 matched window), plus 2018–2025 April aggregates for the Z-score baseline
-- **Approach:** Dual-agent (Claude interpretability vs Codex ML) with adjudication round to resolve a 96-point counterfactual sign disagreement; third independent implementation as triangulation; both agents issued written publish-readiness reviews on the resolved synthesis
-- **Key finding:** **The 2026 zone moved up — top edge shrank ~7-8pp called-strike rate, bottom expanded ~5-6pp. Roughly 40-50% of the +0.82pp walk spike is the zone change. Pitcher behavior accounts for the rest.** Walk spike is +4.4σ above the 2018-2025 April distribution (not seasonality). 3-2 walk-rate delta is essentially zero (Cochran's Q p=0.67) — no count-leverage concentration.
-- **Methodology note:** The original Codex normalized-coordinate counterfactual returned −56.17% attribution; Claude's cross-review identified a Statcast schema artifact (2026 `sz_top`/`sz_bot` switched to deterministic per-batter ABS values), and the absolute-coord rerun flipped to +40.46%. The buggy orchestrator first attempt is included in `scripts/` for transparency.
 
 ### 🧭 [The Coaching Gap](./coaching-gap/)
 Does pitcher predictability translate into hitter wOBA — and if so, *which* hitters actually extract the edge?

@@ -1,7 +1,7 @@
 """Shared data loaders and helpers for the Claude (Agent A) ABS walk-spike analysis.
 
-All paths are resolved relative to the project root (the directory that contains
-this `claude-analysis/` folder).
+All paths are resolved relative to the project root
+`/Users/haohu/Documents/GitHub/calledthird/research/abs-walk-spike`.
 """
 from __future__ import annotations
 
@@ -11,12 +11,9 @@ from typing import Iterable
 import numpy as np
 import pandas as pd
 
-# Project root = the directory containing claude-analysis/ (this file's parent's parent)
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path("/Users/haohu/Documents/GitHub/calledthird/research/abs-walk-spike")
 DATA_DIR = PROJECT_ROOT / "data"
-# Cross-project Statcast 2025 substrate. Override SHARED_2025_DIR via environment if needed.
-import os
-SHARED_2025 = Path(os.environ.get("SHARED_2025_DIR", PROJECT_ROOT.parent / "count-distribution-abs" / "data"))
+SHARED_2025 = PROJECT_ROOT.parent / "count-distribution-abs" / "data"
 
 PARQUET_2026 = DATA_DIR / "statcast_2026_mar27_apr22.parquet"
 PARQUET_2025_SAMEWIN = SHARED_2025 / "statcast_2025_mar27_apr14.parquet"

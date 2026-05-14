@@ -183,8 +183,8 @@ Each agent must produce in their respective `claude-analysis/` or `codex-analysi
 | 0 (now) | Brief approved, data validated, agents launched | Both `data/` files present |
 | 0–6 | Both agents complete initial analysis | Both `READY_FOR_REVIEW.md` exist |
 | 6–9 | Cross-review (each agent reviews the other) | Both review files in `reviews/` |
-| 9–12 | Comparison memo (orchestrator-side synthesis) | `reviews/COMPARISON_MEMO.md` written |
-| 12–24 | Article drafting | Draft ready for editor review |
+| 9–12 | Comparison memo (conversational, in main session) | `reviews/COMPARISON_MEMO.md` written |
+| 12–24 | Article drafting via calledthird-editorial skill | Draft ready for human review |
 
 Round 2 launches +3 days from Round 1 article ship.
 
@@ -205,26 +205,21 @@ Round 2 launches +3 days from Round 1 article ship.
 ## 11. How to Run
 
 ```bash
-cd abs-walk-spike
+cd /Users/haohu/Documents/GitHub/calledthird/research/abs-walk-spike
 
-# Step 0: backfill data (Statcast pull via pybaseball)
+# Step 0 (DONE before launch): backfill data
 python scripts/build_2026_master.py     # -> data/statcast_2026_mar27_apr22.parquet
-python scripts/fetch_april_history.py   # -> data/april_walk_history.csv (already included)
+python scripts/fetch_april_history.py   # -> data/april_walk_history.csv
 
-# Step 1: each agent's analysis (run independently)
-python claude-analysis/analyze.py
-python codex-analysis/analyze.py
+# Step 1: launch both agents (Round 1)
+bash /Users/haohu/.claude/skills/dual-agent-research/scripts/launch_agents.sh \
+  /Users/haohu/Documents/GitHub/calledthird/research/abs-walk-spike
 
-# Step 2: post-cross-review adjudication in absolute coords
-python codex-analysis/adjudication.py        # Codex's absolute-coord rerun
-python scripts/clean_counterfactual.py       # Third independent implementation
-python scripts/debug_counterfactual.py       # Aggregate first-principles sanity check
+# Step 2 (after both READY_FOR_REVIEW.md exist): cross-review
+# (orchestrated via dual-agent-research skill)
 
-# Step 3: review the synthesis docs
-# - reviews/claude-review-of-codex.md
-# - reviews/codex-review-of-claude.md
-# - reviews/claude-publish-readiness.md
-# - reviews/codex-publish-readiness.md
-# - ADJUDICATION_SUMMARY.md (canonical resolved state)
-# - COMPARISON_MEMO.md (editorial synthesis)
+# Step 3 (after both reviews exist): comparison memo
+# (conversational, in main session)
+
+# Step 4: draft article via calledthird-editorial skill
 ```
